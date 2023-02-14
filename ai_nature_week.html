@@ -43,10 +43,10 @@
  function getVision()  { return "<br/><table cellspacing='28px' style='text-align: justify; background-color: #1e4f85'><tr><td></td></tr></table>"; }
  function getSphere()  { return "<br/><table cellspacing='28px' style='text-align: justify; background-color: #1e4f85'><tr><td></td></tr></table>"; }
  function getAB()      { return "<br/><br/><b>.</b><hr/><table cellspacing='28px' style='text-align: justify; background-color: #1e4f85'><tr><td></td></tr></table>"; }
- function getAddress() { return ""}
- function getSummary() { return "<b>About</b><hr/>The Bristol AI and Nature Week runs from 27 Feb - 2 Mar 2023 during reading week of the University of Bristol. It brings together people interested in and working at the interface between artificial intelligence (AI) and applications that benefit nature, science, and life. The week launches at the Great Hall in Wills Memorial Building with an evening of fascinating public talks by Robert Dawes from the BBC Research and Development Team and internationally renowned AI scientist and ecologist Prof Tanya Berger-Wolf from Ohio State University. Reserve your spot for these public lectures <a href='https://shorturl.at/akmRV' target='_blank'>here</a>. After this public opening, all talks, seminars, workshops, and tutorials are open to all students and staff of the university by free registration. Whether you are researcher who wants to know about AI research in Bristol and the link to your own studies, or an undergraduate student who wants to learn more about how AI can be used for good – come along, and be inspired. Full details of the week, the speakers and talks will be published here soon."}
- function getTeaching() { return "<b>"}
- function getResearch() {return "<b>"}
+ function getAddress() { return "";}
+ function getSummary() { return "<b>ABOUT</b><hr/><b>The Bristol AI and Nature Week.</b> Join us for talks, workshops, and seminars running from 27 Feb - 2 Mar 2023 during reading week of the University of Bristol. The week brings together people interested in and working at the interface between artificial intelligence (AI) and applications that benefit nature, science, and life. Public lectures are open to all members of the public via <a href='https://shorturl.at/akmRV' target='_blank'>freely bookable tickets</a>, online workshops are free to attend by anyone interested. All other in-person events of the week are open to students and staff of the University of Bristol. A full programme will be published here soon. Come along and be inspired!";}
+ function getTeaching() { return "";}
+ function getResearch() {return "";}
 </script>
 <body onscroll = "myScroll()"; onresize="myResize()"; style="margin: 0; min-width: 1280px; max-width: 100%; background-color: #FFFFFF; background-size: cover; padding: 0px; overflow-x:hidden; width:100%;">
 
@@ -55,7 +55,9 @@
   <div id="csnav">
   <ul class="width-master uob-mainnav" role="navigation" id="csmenu" style="width:100%; margin-left:0;">
      <li class="u-m-university"> <img style="cursor: pointer;" src="uob.png" height="35px" width="60px" onclick="javascript:goToUni()"/></li>
-     <li class="u-m-university"> <a class="u-m-link" href="javascript:currentSlide(1)" tabindex="0"> Home of The Bristol AI and Nature Week 2023</a></li>
+     <li class="u-m-university"> <a class="u-m-link" href="javascript:currentSlide(1)" tabindex="0"> Home </a></li>
+     <li class="u-m-university"> <a class="u-m-link" id="linkTeam" href="#team" tabindex="0"> Programme </a> </li>
+     <li id="menupap" class="u-m-university"> <a class="u-m-link" href="#papers" onclick="javascript:currentSlide(1)" tabindex="0"> Speakers </a> </li>
   </ul>
   </div>
 </div>
@@ -63,7 +65,7 @@
 <div class="container">
   <img id="topup" src="top.png" onclick="javascript:goToTop()" style="cursor: pointer; width:32px; height:32px; margin-left:7px; position: absolute">
 
-  <div class="mySlides">
+ <div class="mySlides">
     <div class="myFlip">
       <img src="green.png" style="width:100%; height:320px; position: absolute">
       <img src="green.png" style="width:100%; height:320px; position: absolute">
@@ -88,11 +90,11 @@
     </div>
 
     <div class="myFlip">
-      <img src="green.png" style="width:100%; height:256px; position: absolute">
-      <img src="green.png" style="width:100%; height:256px; position: absolute">
+      <img src="green.png" style="width:100%; height:236px; position: absolute">
+      <img src="green.png" style="width:100%; height:236px; position: absolute">
       <div style="position: absolute">
-        <img src="ai_and_nature.png" style="height:166px; margin-top:62px; margin-left:50px">
-        <div style="position: absolute; margin-left:50px; margin-top:-219px; color: #FFFFFF; font-size: 16pt; font-family: 'Helvetica', serif;">
+        <img src="ai_and_nature.png" style="height:110px; margin-top:62px; margin-left:50px">
+        <div style="position: absolute; margin-left:50px; margin-top:-163px; color: #FFFFFF; font-size: 16pt; font-family: 'Helvetica', serif;">
           <script>document.write(getTitle());</script>
         </div>
         <div style="margin-left:254px; margin-top:-176px; color: #FFFFFF; font-size: 11pt; font-family: 'Helvetica', sans-serif;">
@@ -109,7 +111,7 @@
         </a>
       </div>
     </div>
-
+     
   </div>
   </div>
 
@@ -428,13 +430,18 @@ function showSlides(n) {
 </div>
 
 <div id="Team" style="display: none; margin-top: 32px; text-align: left; font-family: 'Helvetica', sans-serif;">
+<b>PUBLIC OPENING LECTURES</b><hr/><br/>
+<table id="pubstab" width="100%" border="0" cellspacing="0" style="text-align: justify; margin-top: -24px; font-family: 'Helvetica', sans-serif; font-size:12pt;" >
+<tr><td colspan="3"><a href="https://shorturl.at/akmRV" target="_blank"><img src="BristolAIandNatureWeek_Flyer_PublicLectures.jpg" border="1" style="width:100%"></a></td></tr>
+<tr><td colspan="3"><b>Join us at the Great Hall!</b> Come along to Wills Memorial Building on Monday 27 February 2023 between 6pm and 8pm for an evening of two fascinating lectures about how AI can assist wildlife conservation and wildlife documentary production. Robert Dawes from the BBC Research and Development Team and internationally renowned AI scientist and ecologist Prof Tanya Berger-Wolf from Ohio State University will take you on a journey to see how AI for Good can be a reality today. Reserve your free spot at these public lectures by <a href='https://shorturl.at/akmRV' target='_blank'>BOOKING HERE</a>.</td></tr>
+</table><br/>
+      
 </div>
 <!--
 <div id="FinalYear" style="display: none; margin-top: 32px; text-align: left; font-family: 'Helvetica', sans-serif;">
 <b>Current Final Year Student Projects</b><hr/>
 <ul>
   </ul>
-
 <br/><b>Previeous Student Projects</b><hr/>
 <font size="2">
 </font>-->
@@ -448,7 +455,21 @@ function showSlides(n) {
 </div>
 
 <div id="pubs" style="width:100%; display: none; vertical-align: top; margin-top: 32px; text-align: left; font-family: 'Helvetica', sans-serif;">
-<b>Public Lectures at the Great Hall</b><hr/>
+<div style="vertical-align: top;">
+<b>SPEAKERS</b><hr/><br/>
+<table id="pubstab" width="100%" border="0" cellspacing="0" style="text-align: justify; margin-top: -24px; font-family: 'Helvetica', sans-serif; font-size:12pt;" >
+<tr><td valign="top"><table cellspacing="10pt"><tr><td><img src="tanya.jpg" border="1" style="width:150px"></td></tr></table></td><td colspan="2" valign="top"><i><b>Prof Tanya Berger-Wolf:<br/><u>PARTNERSHIP FOR CONSERVATION:<br/> AI and Humans Combatting Extinction Together</u></b></i><br/><p style="font-size:0.9em"><br/> We are losing the planet's biodiversity at an unprecedented rate and in many cases, we do not even have the basic numbers. Photographs, taken by field scientists, tourists, citizen scientists, automated cameras, incidental photographers, and collected from social media are the most abundant source of data on wildlife today. To utilise this imagery fully and successfully address the biodiversity crisis and other societal challenges, we need the complementary capabilities of both humans and machines, in partnership.</p></td></tr>
+<tr><td valign="top" colspan="3"><p style="font-size:0.9em"><b>Brief Bio of Prof Tanya Berger-Wolf.</b> As one of the founders of the field of computational ecology, and recently imageomics, Tanya is leading research at the unique intersection of computer science, wildlife biology, and social sciences. She creates computational solutions to generate, collect, analyze and derive insight from data to answer questions and make decisions in ecology, environment and wildlife conservation. Tanya is a Professor of Computer Science and Engineering; Electrical and Computer Engineering; and Evolution, Ecology, and Organismal Biology at the Ohio State University, where she is also the Director of the Translational Data Analytics Institute. She is also a director and co-founder of the AI for conservation software non-profit Wild Me, home of the Wildbook project, which brings together computer vision, crowdsourcing, and conservation. It has been recently chosen by UNSECO as one of the top AI 100 projects worldwide supporting the UN Sustainable Development Goals.  Tanya is a co-founder of a several big projects and fields of study. She works with many teams of brilliant people who do cool, amazing, and impactful things.</p><hr/></td></tr>
+</table><br/>
+    
+
+    
+<br/><b>Website Terms of Use</b><hr/><br/>
+<table id="pubstab" width="100%" border="0" cellspacing="0" style="text-align: justify; margin-top: -24px; font-family: 'Helvetica', sans-serif; font-size:12pt;" >
+<tr><td>See <a href='https://www.bristol.ac.uk/style-guides/web/policies/legal/terms' target='_blank'>University of Bristol Website Terms of Use</a></td></tr>
+</table>
+
+</div>
 </div>
 <script> myResize(); myResize(); myResize();</script>
 </body>
