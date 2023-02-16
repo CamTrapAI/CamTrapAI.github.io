@@ -44,7 +44,7 @@
  function getSphere()  { return "<br/><table cellspacing='28px' style='text-align: justify; background-color: #1e4f85'><tr><td></td></tr></table>"; }
  function getAB()      { return "<br/><br/><b>.</b><hr/><table cellspacing='28px' style='text-align: justify; background-color: #1e4f85'><tr><td></td></tr></table>"; }
  function getAddress() { return "";}
- function getSummary() { return "<b>ABOUT</b><hr/><b>The Bristol AI and Nature Week.</b> Join us for talks, workshops, and seminars running from 27 Feb - 2 Mar 2023 during reading week of the University of Bristol. The week brings together people interested in and working at the interface between artificial intelligence (AI) and applications that benefit nature, science, and life. Public lectures are open to all members of the public via <a href='https://shorturl.at/akmRV' target='_blank'>freely bookable tickets</a>, online workshops are free to attend by anyone interested. All other in-person events of the week are open to students and staff of the University of Bristol. A full programme and further information about talks and speakers will be published here soon. Come along and be inspired!";}
+ function getSummary() { return "<b>ABOUT</b><hr/><b>The Bristol AI and Nature Week.</b> Join us for talks, workshops, and seminars running from 27 Feb - 2 Mar 2023 during reading week of the University of Bristol. The week brings together people interested in and working at the interface between artificial intelligence (AI) and applications that benefit nature, science, and life. Public lectures are open to all members of the public via <a href='https://shorturl.at/akmRV' target='_blank'>freely bookable tickets</a>. Online workshops are free to attend by anyone interested. All other in-person events of the week are open to students and staff of the University of Bristol. A full programme and further information about talks and speakers will be published here soon. Come along and be inspired!";}
  function getTeaching() { return "";}
  function getResearch() {return "";}
 </script>
@@ -56,7 +56,7 @@
   <ul class="width-master uob-mainnav" role="navigation" id="csmenu" style="width:100%; margin-left:0;">
      <li class="u-m-university"> <img style="cursor: pointer;" src="uob.png" height="35px" width="60px" onclick="javascript:goToUni()"/></li>
      <li class="u-m-university"> <a class="u-m-link" href="javascript:currentSlide(1)" tabindex="0"> Home </a></li>
-     <li class="u-m-university"> <a class="u-m-link" id="linkTeam" href="#team" tabindex="0"></a> </li>
+     <li class="u-m-university"> <a class="u-m-link" id="linkTeam" href="#team" tabindex="0"> Programme </a> </li>
      <li id="menupap" class="u-m-university"> <a class="u-m-link" href="#papers" onclick="javascript:currentSlide(1)" tabindex="0"> Speakers </a> </li>
   </ul>
   </div>
@@ -430,12 +430,35 @@ function showSlides(n) {
 </div>
 
 <div id="Team" style="display: none; margin-top: 32px; text-align: left; font-family: 'Helvetica', sans-serif;">
+<br/><b>OVERVIEW OF THE WEEK</b><hr/><br/>
+<table id="pubstab1" width="100%" border="1" valign="top" cellspacing="5" style="text-align: left; margin-top: -24px; font-family: 'Helvetica', sans-serif; font-size:12pt;" >
+<tr bgcolor="#84D504"><td colspan="1">Mon 27 Feb 2023</td><td colspan="1">Tue 28 Feb 2023</td><td colspan="1">Wed 1 Mar 2023</td><td colspan="1">Thu 2 Mar 2023</td></tr>
+<tr bgcolor="#CCCCCC"><td rowspan="3" colspan="1" valign="top"><b>Public Opening Lectures</b><br/>6pm - 8pm<br/>Great Hall, Wills Memorial Building</td>
+<td colspan="1" valign="top" rowspan="2"><b>Interactive AI Day</b><br/>10am - 3pm<br/>in-person, location TBA</td>
+<td colspan="1" valign="top" rowspan="2"><b>MyWorld AI Morning</b><br/>9am - 1pm<br/>in-person, location TBA</td>
+<td colspan="1" valign="top"><b>Visual AI4Ecology Talks</b><br/>10am - 12noon<br/>Pugsley LT, QB</td></tr>
+<tr bgcolor="#CCCCCC">
+<td colspan="1" valign="top"><b>Wilddrone Talks</b><br/>12:30pm - 2pm<br/>Pugsley LT, QB</td></tr>
+<tr bgcolor="#CCCCCC">
+<td colspan="1" valign="top"><b>Online AI Tutorial</b><br/>4pm - 5pm<br/>Public Online, MS Teams</td>
+<td colspan="1" valign="top"><b>John Oldacre Centre Talks</b><br/>2pm - 4pm<br/>Pugsley LT, QB</td>
+<td colspan="1" valign="top"><b>AI meets Ecology Workshop</b><br/>3pm - 4:30pm<br/>Public Online, MS Teams</td></tr>
+</table><br/>
 <b>PUBLIC OPENING LECTURES</b><hr/><br/>
 <table id="pubstab" width="100%" border="0" cellspacing="0" style="text-align: justify; margin-top: -24px; font-family: 'Helvetica', sans-serif; font-size:12pt;" >
 <tr><td colspan="3"><a href="https://shorturl.at/akmRV" target="_blank"><img src="BristolAIandNatureWeek_Flyer_PublicLectures.jpg" border="1" style="width:100%"></a></td></tr>
-<tr><td colspan="3"><b>Join us at the Great Hall!</b> Come along to Wills Memorial Building on Monday 27 February 2023 between 6pm and 8pm for an evening of two fascinating lectures about how AI can assist wildlife conservation and wildlife documentary production. Robert Dawes from the BBC Research and Development Team and internationally renowned AI scientist and ecologist Prof Tanya Berger-Wolf from Ohio State University will take you on a journey to see how AI for Good can be a reality today. Reserve your free spot at these public lectures by <a href='https://shorturl.at/akmRV' target='_blank'>BOOKING HERE</a>.</td></tr>
+<tr><td colspan="3"><b>Join us at the Great Hall!</b> Come along to Wills Memorial Building on Monday 27 February 2023 between 6pm and 8pm for an evening of two fascinating lectures about how AI can assist wildlife conservation and wildlife documentary production. Robert Dawes from the BBC Research and Development Team and internationally renowned AI scientist and ecologist Prof Tanya Berger-Wolf from Ohio State University will take you on a journey to see how AI for Good can be a reality today. Reserve your free spot at these public lectures by <a href='https://shorturl.at/akmRV' target='_blank'>BOOKING HERE</a>. Full information about the talks and speakers can be found in the <a href="#speakers">Speaker Section</a>.</td></tr>
 </table><br/>
-      
+
+<br/><b>LOCAL ORGANIZING TEAM</b><hr/>
+<a href="http://people.cs.bris.ac.uk/~burghard" target="_blank"><b>Tilo Burghardt (Lead)</b></a><br/>
+<a href="http://people.cs.bris.ac.uk/~flach" target="_blank"><b>Peter Flach (Lead)</b></a><br/>
+<a href="https://david-bull.github.io" target="_blank"><b>David Bull</b></a><br/>
+<a href="https://research-information.bris.ac.uk/en/persons/andrew-dowsey" target="_blank"><b>Andrew Dowsey</b></a><br/>
+<a href="" target="_blank"><b>Suzanne Binding</b></a><br/>
+<a href="https://uk.linkedin.com/in/beckyrockevans-eventfreelance" target="_blank"><b>Becky Rock-Evans</b></a><br/>
+<a href="http://www.bristol.ac.uk/cdt/interactive-ai/current-students/2020-cohort/brookes" target="_blank"><b>Otto Brookes</b></a><br/>
+<a href="http://www.bristol.ac.uk/cdt/interactive-ai/current-students/2019-cohort/karaderi" target="_blank"><b>Tayfun Karaderi</b></a><br/>   
 </div>
 <!--
 <div id="FinalYear" style="display: none; margin-top: 32px; text-align: left; font-family: 'Helvetica', sans-serif;">
@@ -456,12 +479,26 @@ function showSlides(n) {
 
 <div id="pubs" style="width:100%; display: none; vertical-align: top; margin-top: 32px; text-align: left; font-family: 'Helvetica', sans-serif;">
 <div style="vertical-align: top;">
-<b>SPEAKERS</b><hr/><br/> 
+<a id="speakers"></a>
+<b>SPEAKERS</b><hr/><br/>
 <table id="pubstab" width="100%" border="0" cellspacing="0" style="text-align: justify; margin-top: -24px; font-family: 'Helvetica', sans-serif; font-size:12pt;" >
-<tr><td valign="top"><table cellspacing="10pt"><tr><td><img src="tanya.jpg" border="1" style="width:150px"></td></tr></table></td><td colspan="2" valign="top"><b><i>Prof Tanya Berger-Wolf (Ohio):</i><br/>PARTNERSHIP FOR CONSERVATION:<br/> AI and Humans Combatting Extinction Together</b><br/><p style="font-size:0.9em"><br/> We are losing the planet's biodiversity at an unprecedented rate and in many cases, we do not even have the basic numbers. Photographs, taken by field scientists, tourists, citizen scientists, automated cameras, incidental photographers, and collected from social media are the most abundant source of data on wildlife today. To utilise this imagery fully and successfully address the biodiversity crisis and other societal challenges, we need the complementary capabilities of both humans and machines, in partnership.</p></td></tr>
+<tr><td><img src="tanya.jpg" style="width:150px"></td><td><img src="robert.jpg" style="width:150px"></td><td><img src="bena.jpg" style="width:150px"></td></tr>
+<tr><td><a href="#tanya" >Tanya Berger-Wolf</a></td><td><a href="#robert" >Robert Dawes</a></td><td><a href="#bena" >Benjamin Risse</a></td></tr>
+<tr><td>Ohio (USA)</td><td>BBC (UK)</td><td>Muenster (Germany)</td></tr><tr><td>&nbsp</td></tr>
+<tr><td><img src="frank.jpg" style="width:150px"></td><td><img src="tom.jpg" style="width:150px"></td><td><img src="" style="width:150px"></td></tr>
+<tr><td><a href="#frank" >Frank van Langevelde</a></td><td><a href="#tom" >Tom Richardson</a></td><td><a href="" ></a></td></tr>
+<tr><td>WUR (Netherlands)</td><td>Bristol (UK)</td><td></td></tr>
+</table>
+<hr/><br/>
+<table id="pubstab" width="100%" border="0" cellspacing="0" style="text-align: justify; margin-top: -24px; font-family: 'Helvetica', sans-serif; font-size:12pt;" >
+<tr><td valign="top"><table cellspacing="10pt"><tr><td><img src="tanya.jpg" border="1" style="width:150px"></td></tr></table></td><td colspan="2" valign="top"><a id="tanya"></a>Public In-person Lecture | 27 Feb | 6pm | Great Hall<br/><b><i>Prof Tanya Berger-Wolf (Ohio):</i><br/>PARTNERSHIP FOR CONSERVATION:<br/> AI and Humans Combatting Extinction Together</b><br/><p style="font-size:0.9em"><br/> We are losing the planet's biodiversity at an unprecedented rate and in many cases, we do not even have the basic numbers. Photographs, taken by field scientists, tourists, citizen scientists, automated cameras, incidental photographers, and collected from social media are the most abundant source of data on wildlife today. To utilise this imagery fully and successfully address the biodiversity crisis and other societal challenges, we need the complementary capabilities of both humans and machines, in partnership.</p></td></tr>
 <tr><td valign="top" colspan="3"><p style="font-size:0.9em"><b>Brief Bio of Prof Tanya Berger-Wolf.</b> As one of the founders of the field of computational ecology, and recently imageomics, Tanya is leading research at the unique intersection of computer science, wildlife biology, and social sciences. She creates computational solutions to generate, collect, analyze and derive insight from data to answer questions and make decisions in ecology, environment and wildlife conservation. Tanya is a Professor of Computer Science and Engineering; Electrical and Computer Engineering; and Evolution, Ecology, and Organismal Biology at the Ohio State University, where she is also the Director of the Translational Data Analytics Institute. She is also a director and co-founder of the AI for conservation software non-profit Wild Me, home of the Wildbook project, which brings together computer vision, crowdsourcing, and conservation. It has been recently chosen by UNSECO as one of the top AI 100 projects worldwide supporting the UN Sustainable Development Goals.  Tanya is a co-founder of a several big projects and fields of study. She works with many teams of brilliant people who do cool, amazing, and impactful things.</p><hr/><br/></td></tr>
-<tr><td valign="top"><table cellspacing="10pt"><tr><td><img src="robert.jpg" border="1" style="width:150px"></td></tr></table></td><td colspan="2" valign="top"><b><i>Robert Dawes (BBC):</i><br/>KEEPING WATCH:<br/>Using AI to assist Natural History Television Production</b><br/><p style="font-size:0.9em"><br/> Robert Dawes from BBC Research and Development will talk about his team's fascinating collaborations with the BBC's Natural History Unit - using computer vision and machine learning to help with the production of shows such as Springwatch.</p></td></tr>
+<tr><td valign="top"><table cellspacing="10pt"><tr><td><img src="robert.jpg" border="1" style="width:150px"></td></tr></table></td><td colspan="2" valign="top"><a id="robert"></a>Public In-person Lecture | 27 Feb | 6pm | Great Hall</i><br/><b><i>Robert Dawes (BBC):</i><br/>KEEPING WATCH:<br/>Using AI to assist Natural History Television Production</b><br/><p style="font-size:0.9em"><br/> Robert Dawes from BBC Research and Development will talk about his team's fascinating collaborations with the BBC's Natural History Unit - using computer vision and machine learning to help with the production of shows such as Springwatch.</p></td></tr>
 <tr><td valign="top" colspan="3"><p style="font-size:0.9em"><b>Brief Bio Robert Dawes (MEng).</b> Robert studied Computer Science at the University of Bristol before joining BBC R&D. He worked on set top box technologies and in the BBC iPlayer team before joining Immersive & Interactive Content investigating the application of image analysis, computer vision and tracking technologies to broadcasting. Much of his work is on supporting television productions, but also applied in the development of sports graphics systems and as part of the Biomechanics project where he helped to create a diving analysis tool used in the television coverage of the London 2012 Olympics.</p><hr/></td></tr>
+<tr><td valign="top"><table cellspacing="10pt"><tr><td><img src="bena.jpg" border="1" style="width:150px"></td></tr></table></td><td colspan="2" valign="top"><a id="bena"></a>Public Online Lecture | 2 Mar | 4pm | MS Teams</i><br/><b><i>Prof Benjamin Risse (Muenster)</i><br/>IS SCIENCE MOSTLY DRIVEN BY IDEAS OR BY TOOLS:<br/>In-field insect monitoring, tracking and environmental mapping systems</b><p>Starting from the maybe provocative questions if 'science is mostly driven by ideas or by tools' (Dyson 2012) I will present one of the most difficult computer vision and machine learning scenario, namely quantifying insect behaviour in natural environments: Tiny, low contrast and fast moving objects have to be localised in cluttered and dynamic scenes resulting in visual ambiguities, frequent occlusions and the need to process huge video files with inappropriate foreground-background ratios and sparse visitation events.
+I will summarize some of the most prominent challenges to detect insects and quantify their in unconstrained settings and will introduce an appearance-agnostic in-field animal detection and tracking algorithm to extract accurate measurements from camera footage. I will close by presenting complementary environmental mapping approaches that yield rich contextual information, and moreover can be combined with behavioural data to achieve the urgently needed lab-level quantifications in wildlife conditions.</p><hr/></td></tr>
+<tr><td valign="top"><table cellspacing="10pt"><tr><td><img src="frank.jpg" border="1" style="width:150px"></td></tr></table></td><td colspan="2" valign="top"><a id="frank"></a>Public Online Lecture | 2 Mar | 4pm | MS Teams</i><br/><b><i>Prof Frank van Langevelde (WUR)</i></b><hr/><br/></td></tr>
+<tr><td valign="top"><table cellspacing="10pt"><tr><td><img src="tom.jpg" border="1" style="width:150px"></td></tr></table></td><td colspan="2" valign="top"><a id="tom"></a>In-person Lecture | 2 Mar | 12:30pm | Pugsley LT</i><br/><b><i>Prof Tom Richardson (University of Bristol)</i></b><hr/><br/></td></tr>
 </table><br/>
     
 
