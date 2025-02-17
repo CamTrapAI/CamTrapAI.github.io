@@ -20,5 +20,5 @@ Main page is index.html, individual workshop pages are listed below.
 - ``workshop-2023-bristol.html``
     This site contains information on the 2025 workshop in Bristol, UK (hybrid)
 
-- ``workshop-2025.html``
+- ``workshop-2022.html``
     This site contains information on the 2022 workshop (online only)
