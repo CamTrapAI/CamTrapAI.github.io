@@ -12,8 +12,8 @@
     <meta content="en-GB" name="DCTERMS.language" />
     <meta content="text/html" name="DCTERMS.format" />
     <meta content="http://www.bristol.ac.uk/university/web/terms-conditions.html" name="DCTERMS.rights" />
-    <meta property="og:image" content="images/camtrapaiws_bw.png" />    
     <meta name="viewport" content="width=device-width, initial-scale=1;user-scalable=0;maximum-scale=1;">
+    <meta property="og:image" content="images/camtrapaiws_bw.png" />
     <link rel="stylesheet" type="text/css" media="screen" href="uobcms_corporate.css" />
 </head>
 
@@ -52,14 +52,15 @@ a:active {
  function goToUniBristol()    { window.open("https://www.bristol.ac.uk"); }
  function goToUniJena()    { window.open("https://www.uni-jena.de/en"); }
  function getTitle()   { return "<b>CamTrapAI Workshop Series</b>"; }
- function getHeader() { return "<b>INTERNATIONAL WORKSHOP SERIES</b><br/><b>ON CAMERA TRAPS, AI, &amp; ECOLOGY</b><br/><br/><b> BRINGING PEOPLE, NATURE &amp; AI TOGETHER</b><br/><br/><b><font color='#FFFFFF' size='5'>All workshops</font></b><br/><a href='https://camtrapai.github.io'><font color='#FFFFFF'>Back to home</font></a><br/>"}
+ function getHeader() { return "<b>INTERNATIONAL WORKSHOP SERIES</b><br/><b>ON CAMERA TRAPS, AI, &amp; ECOLOGY</b><br/><br/><b> BRINGING PEOPLE, NATURE &amp; AI TOGETHER</b><br/><br/><b><a href='https://camtrapai.github.io/workshop-2025.html' target='_blank'><font color='#FFFFFF' size='5'>Next Workshop: Sep 9+10, 2025 in Seattle (hybrid)</font></a></b><br/><a href='https://camtrapai.github.io/workshops-overview.html'><font color='#FFFFFF'>All workshops</font></a><br/>"}
  function getSummary() { return "<b>About</b><hr/>This is the home of the international workshop series on camera traps and AI analysis for wildlife monitoring including associated ecological and data collection methods. It regularly runs as expert talks, tutorials, discussions, and follow-up sessions in a hybrid format. The workshops bring together three communities: camera trap data producers (e.g. nature parks and reserves), scientific practitioners (e.g. ecologists and conservationists), and AI analysis providers (e.g. computer scientists and engineers). The aim of the workshops is to promote exchange between these different communities, link wildlife data and AI methods, and initiate new interdisciplinary projects amongst attendees. The sessions target at field practitioners, academics, researchers, students, and subject enthusiasts."}
  function getContact() { return "<b>Contact</b><hr/>You can email the workshop via the camtrapai [.at.] gmail.com address. To chat during or after the workshop, directly join our Slack chat via an email to aiforconservation [.at.] gmail.com and search for our channel called #camtrapai-workshops within Slack. See you there!<br/>"} 
  function getTermsOfUse() { return "<b>Website Terms of Use</b><hr/><table><tr><td>See <a href='https://www.bristol.ac.uk/style-guides/web/policies/legal/terms' target='_blank'>University of Bristol Website Terms of Use</a></td></tr></table>"}
 </script>
 
 <body onscroll = "myScroll()"; onresize="myResize()"; style="margin: 0; min-width: 1280px; max-width: 100%; background-color: #FFFFFF; background-size: cover; padding: 0px; overflow-x:hidden; width:100%;">
-<!--NAVIGATION-->
+
+   <!--NAVIGATION-->
 <div class="uob-mainnav-container clearfix" id="top">
   <div id="csnav">
   <ul class="width-master uob-mainnav" role="navigation" id="csmenu" style="width:100%; margin-left:0;">
@@ -75,8 +76,11 @@ a:active {
   </ul>
   </div>
 </div>
+<!-- onclick="javascript:currentSlide(1)"  -->
+
 <div class="container">
   <img id="topup" src="images/top.png" onclick="javascript:goToTop()" style="cursor: pointer; width:32px; height:32px; margin-left:7px; position: absolute">
+
   <div class="mySlides">
     <div class="myFlip">
       <img src="images/introsimple.gif" style="width:100%; height:320px; position: absolute">
@@ -100,6 +104,7 @@ a:active {
         </a>
       </div>
     </div>
+
     <div class="myFlip">
       <img src="images/introsimple.gif" style="width:100%; height:256px; position: absolute">
       <img src="images/camtrapai.gif" style="width:100%; height:256px; position: absolute">
@@ -113,21 +118,22 @@ a:active {
         </div>
       </div>
     </div>
+
   </div>
-</div>
+  </div>
+
+
 <div class="myBlock" id="myPC" style="margin-left:49px; margin-top:345px; text-align: justify; font-size: 13pt; font-family: 'Helvetica', sans-serif;">
   <table width="100%" border="0" cellspacing="14">
     <tr>
       <td valign="top" style="background-color: #FFFFFF;">
         <div id="myLeft" width="70%" style="text-align: justify; font-size: 13pt; font-family: 'Helvetica', sans-serif;">
-          <div id="workshops">
-            <b>All workshops</b><hr/>
-          </div>
-          <br/>
           <div id="about"> 
             <script> document.write(getSummary()); </script>
           </div>
-          <br/>          
+          <div id="workshops">
+          </div>
+          <br/>
           <div id="contact">
             <script> document.write(getContact()); </script>
           </div>
@@ -135,7 +141,7 @@ a:active {
           <div id="termsofuse">
             <script> document.write(getTermsOfUse()); </script>
           </div>          
-          <br/>
+          <br/><br/><br/><br/><br/><br/>
         </div>
       </td>
       <td valign="top" style="background-color: #FFFFFF;">
@@ -147,14 +153,13 @@ a:active {
     </tr>
   </table>
 </div>
+
 <div class="myBlock" id="myMobile" style="margin-left:49px; margin-top:288px; text-align: justify; font-size: 13pt; font-family: 'Helvetica', sans-serif;">
-  <div id="workshopsMobile">
-    <b>All workshops</b><hr/>
-  </div>
-  <br/>
   <div id="aboutMobile"> 
     <script> document.write(getSummary()); </script>
   </div>
+  <div id="workshopsMobile">
+  </div>  
   <br/>
   <div id="contactMobile">
     <script> document.write(getContact()); </script>
@@ -225,7 +230,7 @@ function myResize() {
 
   if (firstRun>0) {
     firstRun--;
-
+// 
     var itm = document.getElementById("workshopsContent");
     itm.style.display = "block";
     var cln = itm.cloneNode(true);
@@ -233,7 +238,7 @@ function myResize() {
     cln = itm.cloneNode(true);
     document.getElementById("workshopsMobile").appendChild(cln);
     itm.remove();
-    
+//
     itm = document.getElementById("organizersContent");
     itm.style.display = "block";
     cln = itm.cloneNode(true);
@@ -241,7 +246,7 @@ function myResize() {
     cln = itm.cloneNode(true);
     document.getElementById("organizersMobile").appendChild(cln);
     itm.remove();    
-
+//
   }
 }
 
@@ -267,15 +272,14 @@ function showSlides(n) {
 </script>
         
 <div id="workshopsContent" style="width:100%; display: none; vertical-align: top; margin-top: 32px; text-align: left; font-family: 'Helvetica', sans-serif;">
-  <!-- <a href="https://camtrapai.github.io/workshop-2025.html"><b>5th Workshop 2025 in Seattle, USA (hybrid)</b></a>
-  <br/><br/> -->
-  <a href="https://camtrapai.github.io/workshop-2024.html"><b>4th Workshop 2024 in Hagenberg, Austria (hybrid)</b></a>
-  <br/><br/>
-  <a href="https://camtrapai.github.io/workshop-2023-jena.html"><b>3rd Workshop 2023 in Jena, Germany (hybrid)</b></a>
-  <br/><br/>
-  <a href="https://camtrapai.github.io/workshop-2023-bristol.html"><b>2nd Workshop 2023 in Bristol, UK (hybrid)</b></a>
-  <br/><br/>
-  <a href="https://camtrapai.github.io/workshop-2022.html"><b>1st workshop 2022 (online only)</b></a>
+  <b>Workshops</b><hr/>
+  <br/>
+  <b>NEWS: We are happy to announce that we finalized the dates for the workshop this year:</b><br/><br/>
+  <p style="font-size:24px">
+  <a href="https://camtrapai.github.io/workshop-2025.html"><b>September 9+10, 2025 in Seattle (hybrid) hosted by Ai2</b></a></br><em style="color:#ee0000">(Paper submission deadline extended: July 9, 2025)</em>
+  </p>
+  <br/>
+  <a href="https://camtrapai.github.io/workshops-overview.html"><b>List of all workshops</b></a>
   <br/><br/>
 </div>
 
@@ -313,19 +317,18 @@ function showSlides(n) {
     <b>Further Organizers / Programme Committee</b><hr/><br/>
     <table id="furtherOrganizers" width="100%" border="0" cellspacing="0" style="text-align: justify; margin-top: -24px; font-family: 'Helvetica', sans-serif; font-size:12pt;" >
       <tr>
-      <td>    
+      <td>
       <a href="https://www.senckenberg.de/de/institute/senckenberg-museum-fuer-naturkunde-goerlitz/abt-zoologie/sekt-mammalogie/mammalogie-team/" target="_blank"><b>Hjalmar S Kuehl</b> (Senckenberg and TU Dresden)</a><br/>
       <a href="https://www.mathislab.org/" target="_blank"><b>Alexander Mathis</b> (EPFL, Mathis Group for Computational Neuroscience and AI)</a><br/>
       <a href="https://www.wildlife.uni-freiburg.de/de/mitarbeiterinnen/fiderer" target="_blank"><b>Christian Fiderer</b> (Wildlife Ecology and Management, University of Freiburg)</a><br/>
-      <a href="https://www.wildlife.uni-freiburg.de/de/mitarbeiterinnen/henrich" target="_blank"><b>Maik Henrich</b> (Wildlife Ecology and Management, University of Freiburg)</a><br/>   
       <a href="https://www.wildlife.uni-freiburg.de/en/Staff/marco%20heurich" target="_blank"><b>Marco Heurich</b> (Wildlife Ecology and Management, University of Freiburg)</a><br/>
       <a href="https://pure.fh-ooe.at/de/persons/david-christian-schedl" target="_blank"><b>David Schedl</b> (Upper Austrian University of Applied Sciences, Campus Hagenberg)</a><br/>
       <a href="https://pure.fh-ooe.at/de/persons/christoph-praschl" target="_blank"><b>Christoph Praschl</b> (Upper Austrian University of Applied Sciences, Campus Hagenberg)</a><br/>
       <a href="https://jsis.washington.edu/emis/people/ted-schmitt/" target="_blank"><b>Ted Schmitt</b> (Ai2, Allen Institute for Artificial intelligence)</a><br/>
-      <a href="https://allenai.org/" target="_blank"><b>Jes Lefcourt</b> (Ai2, Allen Institute for Artificial intelligence)</a><br/>
+      <a href="https://allenai.org/" target="_blank"><b>Jes Lefcourt</b> (Ai2, Allen Institute for Artificial intelligence)</a><br/>   
       </td>
       <tr>
-    </table>      
+    </table>
     <br/>
     <table id="affiliations" width="100%" border="0" cellspacing="0" style="text-align: justify; margin-top: -24px; font-family: 'Helvetica', sans-serif; font-size:12pt;" >
         <tr>

@@ -12,8 +12,8 @@
     <meta content="en-GB" name="DCTERMS.language" />
     <meta content="text/html" name="DCTERMS.format" />
     <meta content="http://www.bristol.ac.uk/university/web/terms-conditions.html" name="DCTERMS.rights" />
+    <meta property="og:image" content="camtrapaiws_bw.png" />   
     <meta name="viewport" content="width=device-width, initial-scale=1;user-scalable=0;maximum-scale=1;">
-    <meta property="og:image" content="images/camtrapaiws_bw.png" />
     <link rel="stylesheet" type="text/css" media="screen" href="uobcms_corporate.css" />
 </head>
 
@@ -52,10 +52,10 @@ a:active {
  function goToUniBristol()    { window.open("https://www.bristol.ac.uk"); }
  function goToUniJena()    { window.open("https://www.uni-jena.de/en"); }
  function getTitle()   { return "<b>CamTrapAI Workshop Series</b>"; }
- function getHeader() { return "<b>INTERNATIONAL WORKSHOP SERIES</b><br/><b>ON CAMERA TRAPS, AI, &amp; ECOLOGY</b><br/><br/><b> BRINGING PEOPLE, NATURE &amp; AI TOGETHER</b><br/><br/><b><a href='https://camtrapai.github.io/workshop-2025.html' target='_blank'><font color='#FFFFFF' size='5'>Next Workshop: Sep 9+10, 2025 in Seattle (hybrid)</font></a></b><br/><a href='https://camtrapai.github.io/workshops-overview.html'><font color='#FFFFFF'>All workshops</font></a><br/>"}
- function getSummary() { return "<b>About</b><hr/>This is the home of the international workshop series on camera traps and AI analysis for wildlife monitoring including associated ecological and data collection methods. It regularly runs as expert talks, tutorials, discussions, and follow-up sessions in a hybrid format. The workshops bring together three communities: camera trap data producers (e.g. nature parks and reserves), scientific practitioners (e.g. ecologists and conservationists), and AI analysis providers (e.g. computer scientists and engineers). The aim of the workshops is to promote exchange between these different communities, link wildlife data and AI methods, and initiate new interdisciplinary projects amongst attendees. The sessions target at field practitioners, academics, researchers, students, and subject enthusiasts."}
- function getContact() { return "<b>Contact</b><hr/>You can email the workshop via the camtrapai [.at.] gmail.com address. To chat during or after the workshop, directly join our Slack chat via an email to aiforconservation [.at.] gmail.com and search for our channel called #camtrapai-workshops within Slack. See you there!<br/>"} 
- function getTermsOfUse() { return "<b>Website Terms of Use</b><hr/><table><tr><td>See <a href='https://www.bristol.ac.uk/style-guides/web/policies/legal/terms' target='_blank'>University of Bristol Website Terms of Use</a></td></tr></table>"}
+ function getHeader() { return "<b>INTERNATIONAL WORKSHOP SERIES</b><br/><b>ON CAMERA TRAPS, AI, &amp; ECOLOGY</b><br/><br/><b> BRINGING PEOPLE, NATURE &amp; AI TOGETHER</b><br/><br/><b><font color='#FFFFFF' size='5'>5th International Workshop: Sep 9+10, 2025 in Seattle (hybrid)</font></b><br/><a href='https://camtrapai.github.io'><font color='#FFFFFF'>Back to home</font></a><br/>"}
+ function getSummary() { return "The international workshop series on camera traps and AI analysis for wildlife monitoring including associated ecological and data collection methods. It regularly runs as expert talks, tutorials, discussions, and follow-up sessions in a hybrid format. The workshops bring together three communities: camera trap data producers (e.g. nature parks and reserves), scientific practitioners (e.g. ecologists and conservationists), and AI analysis providers (e.g. computer scientists and engineers). The aim of the workshops is to promote exchange between these different communities, link wildlife data and AI methods, and initiate new interdisciplinary projects amongst attendees. The sessions target at field practitioners, academics, researchers, students, and subject enthusiasts."}
+ function getContact() { return "You can email the workshop via the camtrapai[.at.]gmail.com address. To chat during or after the workshop, directly join our Slack chat via an email to aiforconservation[.at.]gmail.com and search for our channel called #camtrapai-workshops within Slack. See you there!<br/>"}
+ function getTermsOfUse() { return "<table><tr><td>See <a href='https://www.bristol.ac.uk/style-guides/web/policies/legal/terms' target='_blank'>University of Bristol Website Terms of Use</a></td></tr></table>"}
 </script>
 
 <body onscroll = "myScroll()"; onresize="myResize()"; style="margin: 0; min-width: 1280px; max-width: 100%; background-color: #FFFFFF; background-size: cover; padding: 0px; overflow-x:hidden; width:100%;">
@@ -68,7 +68,7 @@ a:active {
      <li class="u-m-university"> <img style="cursor: pointer;" src="images/uni-jena.png" height="35px" width="100px" onclick="javascript:goToUniJena()"/></li>
      <li class="u-m-university"> <a class="u-m-link" href="https://camtrapai.github.io" tabindex="0"> Home </a></li>
      <li class="u-m-university"> <a class="u-m-link" id="aboutLink" href="#about" tabindex="0"> About </a> </li>
-     <li class="u-m-university"> <a class="u-m-link" id="workshopsLink" href="#workshops" tabindex="0"> Workshops </a> </li>
+     <li class="u-m-university"> <a class="u-m-link" id="programmeLink" href="#programme" tabindex="0"> Programme </a> </li>
      <li class="u-m-university"> <a class="u-m-link" id="contactLink" href="#contact" tabindex="0"> Contact </a> </li>
      <li class="u-m-university"> <a class="u-m-link" id="termsofuseLink" href="#termsofuse" tabindex="0"> Terms of Use </a> </li>
      <li class="u-m-university"> <a class="u-m-link" id="organizersLink" href="#organizers" tabindex="0"> Organizers </a> </li>
@@ -118,59 +118,111 @@ a:active {
         </div>
       </div>
     </div>
-
   </div>
   </div>
 
 
-<div class="myBlock" id="myPC" style="margin-left:49px; margin-top:345px; text-align: justify; font-size: 13pt; font-family: 'Helvetica', sans-serif;">
+<div class="myBlock" id="myPC" style="margin-left:49px; margin-top:345px; text-align: justify; font-size: 14pt; font-family: 'Helvetica', sans-serif;">
   <table width="100%" border="0" cellspacing="14">
     <tr>
       <td valign="top" style="background-color: #FFFFFF;">
-        <div id="myLeft" width="70%" style="text-align: justify; font-size: 13pt; font-family: 'Helvetica', sans-serif;">
-          <div id="about"> 
-            <script> document.write(getSummary()); </script>
+        <div id="myLeft" style="text-align: justify; font-size: 14pt; font-family: 'Helvetica', sans-serif;">
+          <div id="information">
+            <b style="font-size:18pt">Information</b><hr/>
           </div>
-          <div id="workshops">
+          <br/>
+          <div id="dates">
+            <b style="font-size:18pt">Dates and Deadlines</b><hr/>
+          </div>
+          <br/>
+          <div id="submissions">
+            <b style="font-size:18pt">Submissions and Scope</b><hr/>
+          </div>
+          <br/>          
+          <div id="join">
+            <b style="font-size:18pt">Online and On-site Participation</b><hr/>
+          </div>
+          <br/> 
+          <div id="local">
+            <b style="font-size:18pt">Local Organization Team</b><hr/>
+          </div>
+          <br/>    
+          <div id="programme">
+            <b style="font-size:18pt">Workshop Programme</b><hr/>
+          </div>
+          <br/>
+        </div>
+      </td>
+      <td valign="top" style="background-color: #FFFFFF;">
+        <div id="myCenter" style="text-align: justify; font-size: 14pt; font-family: 'Helvetica', sans-serif;">
+        </div>
+      </td>      
+      <td valign="top" style="background-color: #FFFFFF;">
+        <div id="myRight" style="margin-top:-33px; text-align: justify; font-size: 14pt; font-family: 'Helvetica', sans-serif;">
+          <div id="organizers">
+          </div>
+          <div id="about">
+            <b style="font-size:18pt">About the Workshop Series</b><hr/>
+            <script> document.write(getSummary()); </script>
           </div>
           <br/>
           <div id="contact">
+            <b style="font-size:18pt">Get in Touch</b><hr/>
             <script> document.write(getContact()); </script>
           </div>
           <br/>
           <div id="termsofuse">
+            <b style="font-size:18pt">Website Terms of Use</b><hr/>
             <script> document.write(getTermsOfUse()); </script>
           </div>          
-          <br/><br/><br/><br/><br/><br/>
-        </div>
-      </td>
-      <td valign="top" style="background-color: #FFFFFF;">
-        <div id="myRight" width="30%" style="margin-top:-33px; text-align: justify; font-size: 13pt; font-family: 'Helvetica', sans-serif;">
-          <div id="organizers">
-          </div>        
         </div>
       </td>
     </tr>
   </table>
 </div>
 
-<div class="myBlock" id="myMobile" style="margin-left:49px; margin-top:288px; text-align: justify; font-size: 13pt; font-family: 'Helvetica', sans-serif;">
-  <div id="aboutMobile"> 
+<div class="myBlock" id="myMobile" style="margin-left:49px; margin-top:288px; text-align: justify; font-size: 14pt; font-family: 'Helvetica', sans-serif;">
+  <div id="informationMobile">
+    <b style="font-size:18pt">Information</b><hr/>
+  </div>
+  <br/>
+  <div id="datesMobile">
+    <b style="font-size:18pt">Dates and Deadlines</b><hr/>
+  </div>
+  <br/>
+  <div id="submissionsMobile">
+    <b style="font-size:18pt">Submissions and Scope</b><hr/>
+  </div>
+  <br/>  
+  <div id="joinMobile">
+    <b style="font-size:18pt">Online and On-site Participation</b><hr/>
+  </div>
+  <br/> 
+  <div id="localMobile">
+    <b style="font-size:18pt">Local Organization Team</b><hr/>
+  </div>
+  <br/>    
+  <div id="programmeMobile">
+    <b style="font-size:18pt">Workshop Programme</b><hr/>
+  </div>
+  <br/>
+  <div id="organizersMobile">
+  </div>
+  <br/>
+  <div id="aboutMobile">
+    <b style="font-size:18pt">About the Workshop Series</b><hr/>
     <script> document.write(getSummary()); </script>
   </div>
-  <div id="workshopsMobile">
-  </div>  
   <br/>
   <div id="contactMobile">
+    <b style="font-size:18pt">Get in Touch</b><hr/>
     <script> document.write(getContact()); </script>
   </div>
   <br/>
   <div id="termsofuseMobile">
+    <b style="font-size:18pt">Website Terms of Use</b><hr/>
     <script> document.write(getTermsOfUse()); </script>
   </div>  
-  <br/>
-  <div id="organizersMobile">
-  </div>    
 </div>
 
 <script>
@@ -209,7 +261,7 @@ function myResize() {
     blocks[1].style.display = "block";
     document.getElementById("topup").style.marginLeft = "7px";
     document.getElementById("aboutLink").href = "#aboutMobile";
-    document.getElementById("workshopsLink").href = "#workshopsMobile";
+    document.getElementById("programmeLink").href = "#programmeMobile";
     document.getElementById("contactLink").href = "#contactMobile";
     document.getElementById("termsofuseLink").href = "#termsofuseMobile";
     document.getElementById("organizersLink").href = "#organizersMobile";
@@ -219,9 +271,9 @@ function myResize() {
     slides[0].style.display = "block";
     blocks[0].style.display = "block";
     document.getElementById("topup").style.marginLeft = "12px";
-    document.getElementById("aboutLink").href = "#about";   
-    document.getElementById("workshopsLink").href = "#workshops";
-    document.getElementById("contactLink").href = "#contact";    
+    document.getElementById("aboutLink").href = "#about";
+    document.getElementById("programmeLink").href = "#programme";
+    document.getElementById("contactLink").href = "#contact";
     document.getElementById("termsofuseLink").href = "#termsofuse";
     document.getElementById("organizersLink").href = "#organizers";
     document.getElementById("myPC").style.width = getWidth()+"px";
@@ -230,13 +282,53 @@ function myResize() {
 
   if (firstRun>0) {
     firstRun--;
-// 
-    var itm = document.getElementById("workshopsContent");
+//
+    var itm = document.getElementById("informationContent");
     itm.style.display = "block";
     var cln = itm.cloneNode(true);
-    document.getElementById("workshops").appendChild(cln);
+    document.getElementById("information").appendChild(cln);
     cln = itm.cloneNode(true);
-    document.getElementById("workshopsMobile").appendChild(cln);
+    document.getElementById("informationMobile").appendChild(cln);
+    itm.remove();
+//
+    var itm = document.getElementById("datesContent");
+    itm.style.display = "block";
+    var cln = itm.cloneNode(true);
+    document.getElementById("dates").appendChild(cln);
+    cln = itm.cloneNode(true);
+    document.getElementById("datesMobile").appendChild(cln);
+    itm.remove();    
+//
+    var itm = document.getElementById("submissionsContent");
+    itm.style.display = "block";
+    var cln = itm.cloneNode(true);
+    document.getElementById("submissions").appendChild(cln);
+    cln = itm.cloneNode(true);
+    document.getElementById("submissionsMobile").appendChild(cln);
+    itm.remove();    
+//
+    var itm = document.getElementById("joinContent");
+    itm.style.display = "block";
+    var cln = itm.cloneNode(true);
+    document.getElementById("join").appendChild(cln);
+    cln = itm.cloneNode(true);
+    document.getElementById("joinMobile").appendChild(cln);
+    itm.remove();
+//
+    var itm = document.getElementById("localContent");
+    itm.style.display = "block";
+    var cln = itm.cloneNode(true);
+    document.getElementById("local").appendChild(cln);
+    cln = itm.cloneNode(true);
+    document.getElementById("localMobile").appendChild(cln);
+    itm.remove();    
+//
+    var itm = document.getElementById("programmeContent");
+    itm.style.display = "block";
+    var cln = itm.cloneNode(true);
+    document.getElementById("programme").appendChild(cln);
+    cln = itm.cloneNode(true);
+    document.getElementById("programmeMobile").appendChild(cln);
     itm.remove();
 //
     itm = document.getElementById("organizersContent");
@@ -245,7 +337,7 @@ function myResize() {
     document.getElementById("organizers").appendChild(cln);
     cln = itm.cloneNode(true);
     document.getElementById("organizersMobile").appendChild(cln);
-    itm.remove();    
+    itm.remove();
 //
   }
 }
@@ -270,23 +362,88 @@ function showSlides(n) {
   else setTimeout(showSlides, 10000);
 }
 </script>
-        
-<div id="workshopsContent" style="width:100%; display: none; vertical-align: top; margin-top: 32px; text-align: left; font-family: 'Helvetica', sans-serif;">
-  <b>Workshops</b><hr/>
+
+<div id="informationContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
+  We are happy to announce that the <b>2025 Workshop</b> on Camera Traps, AI, and Ecology will be held as a hybrid event in Seattle, USA hosted by <a href="https://allenai.org/">Ai2</a> on <b>September 9th and 10th</b>.
+  <br/> <br/>
+  <a href="https://allenai.org/" alt="Allen AI" target="_blank"><img src="images/logo-Ai2.jpeg" style="height:75px"></a>
+</div>
+
+<div id="datesContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
+  Paper submission deadline: <b style="color:#ee0000">extended to July 9th, 2025</b> at 23:59 (AOE)<br/>
+  Internal review deadline: August 7th, 2025<br/>
+  Notification of authors: August 14th, 2025<br/>
+  Camera-ready deadline: <b>August 28th, 2025</b> at 23:59 (AOE)
   <br/>
-  <b>NEWS: We are happy to announce that we finalized the dates for the workshop this year:</b><br/><br/>
-  <p style="font-size:24px">
-  <a href="https://camtrapai.github.io/workshop-2025.html"><b>September 9+10, 2025 in Seattle (hybrid) hosted by Ai2</b></a></br><em style="color:#ee0000">(Paper submission deadline extended: July 9, 2025)</em>
-  </p>
-  <br/>
-  <a href="https://camtrapai.github.io/workshops-overview.html"><b>List of all workshops</b></a>
+</div>
+
+<div id="submissionsContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: justify; font-family: 'Helvetica', sans-serif;">
+  We invite you to submit <b>extended abstracts</b> (4 pages, excl. references) and <b>full papers</b> (6 pages, excl. references) related to AI image analysis of
+  camera trap data for wildlife monitoring and conservation. The review process will be single-blind, and there will be at least two independent reviewers evaluating each paper.
+  Selected best papers will be invited to submit an extended version of their paper to a Special Issue in the <a href="https://digital-library.theiet.org/journal/iet-cvi" alt="IET CV" target="_blank">IET Computer Vision Journal</a>. Further information on the scope of papers is given below as well as in this <a href="Call4Papers2025.pdf">Call for papers</a>!
   <br/><br/>
+  <b>Author instructions</b>: For preparing your paper, please also stick to the rules and formats provided by the following templates: <a href="CamTrapAI-WS_latex_template.zip">LaTeX</a> | <a href="CamTrapAI-WS_word_template.zip">Word</a>
+  </br><br/>
+  <b>Paper submission</b> via <em>CMT</em>: <a href="https://cmt3.research.microsoft.com/CamTrapAI2025" alt="CMT CamTrapAI2025" target="_blank">https://cmt3.research.microsoft.com/CamTrapAI2025 </a> 
+  <br/>
+  <p style="font-size:11pt">(The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.)</p>
+  <b>All papers must contain original research</b> that has not been published before and has not been submitted (simultaneously) to another workshop, conference, or journal.
+  <br/><br/>
+  However, we specifically <b>encourage to submit early findings</b> that might be extended for future submission to another venue after the workshop.
+  <br/><br/>
+  The scope of this workshop is to bring together people analyzing camera trap data with artificial intelligence (AI) support. We want to discuss current open challenges and the latest algorithmic solutions to related problems.
+  Besides computer scientists working on new computer vision and machine learning methods, we also address ecologists using existing AI tools to tackle open problems and answer specific questions within their application domain. Hence, we encourage especially interdisciplinary teams working at the intersection of AI and ecology to submit the results of their recent work.
+  <br/><br/>
+  Paper submission is open for a <b>broad range of topics and application domains</b>, including but not limited to:
+  <ul>
+    <li>Analyzing camera trap data or other related ecological vision datasets (images, image sequences, or videos)</li>
+    <li>Camera traps in the wild or in controlled environments like a Zoo, </li>
+    <li>Observations of birds and bugs, mammals and moths, spiders and snakes, etc.,</li>
+    <li>Investigating images and videos from insect monitoring cameras (Lepidoptera, pollinators, anthropods, etc.),</li>
+    <li>Maritime and freshwater applications by studying underwater imagery of fish and other aquatic animals,</li> 
+    <li>Animal detection and movement tracking of groups and individuals,</li>
+    <li>Video recognition of animal behavior analysis,</li>
+    <li>Identification of species, individuals, and morphological traits (in images or videos)</li>
+    <li>Fine-grained visual categorization approaches and related recognition tasks at subordinate levels, </li>
+    <li>Animal pose estimation in still images and video footage,</li>
+    <li>Applying AI methods to camera trap data for answering ecological questions,</li>
+    <li>New ecological questions or important open problems that can’t be solved with current AI approaches.</li>
+  </ul>
+  We also invite papers showing <b>preliminary results</b> if the paper contribution is clearly outlined and inspects one of the following topics:
+  <ul>
+    <li>A new AI method that shows promising results on camera trap or other ecology datasets.</li>
+    <li>A new ecological question or an open problem that can barely be addressed with existing AI techniques and inspires the development of advanced algorithms.</li>
+    <li>A new dataset with a description of the specific tasks and challenges, that require the development of new AI methods.</li>
+  </ul>
+</div>
+
+<div id="joinContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
+  Here is the address if you want to join on-site:</br></br>
+  Allen Institute for AI</br>Northlake Commons</br>3800 Latona Ave NE Suite 300</br>Seattle, WA 98105</br>
+  </br>
+  <em>A link for joining online will be provided here prior to the meeting!</em>
+  <br/>
+</div>
+
+<div id="localContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
+  Contact:
+  <b>Ted Schmitt</b> and Jes Lefcourt
+  </br>
+  <em><a href="https://allenai.org/">Allen Institute for AI</a></em></br>
+  </br>
+  If you have any questions regarding on-site participation, please reach out to Ted: <em>teds[.at.]allenai.org</em>
+  <br/>
+</div>
+
+<div id="programmeContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
+  <em>Information on the workshop programme coming soon!</em>
+  <br/>
 </div>
 
 <div id="organizersContent" style="width:100%; display: none; vertical-align: top; margin-top: 32px; text-align: left; font-family: 'Helvetica', sans-serif;">
-    <b>Workshop Series Organizers</b><hr/><br/>
-    <b>Team at University of Bristol</b><br/>
-    <table id="bristol-team" width="80%" border="0" cellspacing="0" style="text-align: justify; margin-top: 4px; font-family: 'Helvetica', sans-serif; font-size:12pt;" >
+    <b style="font-size:18pt">Workshop Series Organizers</b><hr/><br/>
+    <b style="font-size:14pt">Team at University of Bristol</b><br/>
+    <table id="bristol-team" width="80%" border="0" cellspacing="0" style="text-align: justify; margin-top: 4px; font-family: 'Helvetica', sans-serif; font-size:14pt;" >
       <tr>
       <td>
         <a href="https://tiloburghardt.github.io" target="_blank"><b>Tilo Burghardt</b></a><br/>
@@ -298,8 +455,8 @@ function showSlides(n) {
       </td>
       <tr>
     </table>
-    <b>Team at University of Jena</b><br/>
-    <table id="jena-team" width="80%" border="0" cellspacing="0" style="text-align: justify; margin-top: 4px; font-family: 'Helvetica', sans-serif; font-size:12pt;" >
+    <b style="font-size:14pt">Team at University of Jena</b><br/>
+    <table id="jena-team" width="80%" border="0" cellspacing="0" style="text-align: justify; margin-top: 4px; font-family: 'Helvetica', sans-serif; font-size:14pt;" >
       <tr>
       <td>
         <a href="https://inf-cv.uni-jena.de/bodesheim" target="_blank"><b>Paul Bodesheim</b></a><br/>
@@ -314,32 +471,28 @@ function showSlides(n) {
       <tr>
     </table>
     <br/>
-    <b>Further Organizers / Programme Committee</b><hr/><br/>
-    <table id="furtherOrganizers" width="100%" border="0" cellspacing="0" style="text-align: justify; margin-top: -24px; font-family: 'Helvetica', sans-serif; font-size:12pt;" >
-      <tr>
-      <td>
-      <a href="https://www.senckenberg.de/de/institute/senckenberg-museum-fuer-naturkunde-goerlitz/abt-zoologie/sekt-mammalogie/mammalogie-team/" target="_blank"><b>Hjalmar S Kuehl</b> (Senckenberg and TU Dresden)</a><br/>
-      <a href="https://www.mathislab.org/" target="_blank"><b>Alexander Mathis</b> (EPFL, Mathis Group for Computational Neuroscience and AI)</a><br/>
-      <a href="https://www.wildlife.uni-freiburg.de/de/mitarbeiterinnen/fiderer" target="_blank"><b>Christian Fiderer</b> (Wildlife Ecology and Management, University of Freiburg)</a><br/>
-      <a href="https://www.wildlife.uni-freiburg.de/en/Staff/marco%20heurich" target="_blank"><b>Marco Heurich</b> (Wildlife Ecology and Management, University of Freiburg)</a><br/>
-      <a href="https://pure.fh-ooe.at/de/persons/david-christian-schedl" target="_blank"><b>David Schedl</b> (Upper Austrian University of Applied Sciences, Campus Hagenberg)</a><br/>
-      <a href="https://pure.fh-ooe.at/de/persons/christoph-praschl" target="_blank"><b>Christoph Praschl</b> (Upper Austrian University of Applied Sciences, Campus Hagenberg)</a><br/>
-      <a href="https://jsis.washington.edu/emis/people/ted-schmitt/" target="_blank"><b>Ted Schmitt</b> (Ai2, Allen Institute for Artificial intelligence)</a><br/>
-      <a href="https://allenai.org/" target="_blank"><b>Jes Lefcourt</b> (Ai2, Allen Institute for Artificial intelligence)</a><br/>   
-      </td>
-      <tr>
-    </table>
+    <b style="font-size:18pt">Programme Committee</b><hr/><br/>
+    <p style="font-size:12pt">
+    <a href="https://jsis.washington.edu/emis/people/ted-schmitt/" target="_blank"><b>Ted Schmitt</b> (Ai2, Allen Institute for Artificial intelligence)</a><br/>
+    <a href="https://allenai.org/" target="_blank"><b>Jes Lefcourt</b> (Ai2, Allen Institute for Artificial intelligence)</a><br/>    
+    <a href="https://www.senckenberg.de/de/institute/senckenberg-museum-fuer-naturkunde-goerlitz/abt-zoologie/sekt-mammalogie/mammalogie-team/" target="_blank"><b>Hjalmar S Kuehl</b> (Senckenberg and TU Dresden)</a><br/>
+    <a href="https://www.mathislab.org/" target="_blank"><b>Alexander Mathis</b> (EPFL, Mathis Group for Computational Neuroscience and AI)</a><br/>
+    <a href="https://pure.fh-ooe.at/de/persons/david-christian-schedl" target="_blank"><b>David Schedl</b> (Upper Austrian University of Applied Sciences, Campus Hagenberg)</a><br/>
+    <a href="https://pure.fh-ooe.at/de/persons/christoph-praschl" target="_blank"><b>Christoph Praschl</b> (Upper Austrian University of Applied Sciences, Campus Hagenberg)</a><br/>
+    <a href="https://inf-cv.uni-jena.de/home/staff/venkataramanan/" target="_blank"><b>Aishwarya Venkataramanan</b> (Computer Vision Group, Friedrich Schiller University Jena)</a><br/>
+    <a href="https://inf-cv.uni-jena.de/home/staff/sickert/" target="_blank"><b>Sven Sickert</b> (Computer Vision Group, Friedrich Schiller University Jena)</a><br/>
+    <a href="https://www.wildlife.uni-freiburg.de/de/mitarbeiterinnen/henrich" target="_blank"><b>Maik Henrich</b> (Wildlife Ecology and Management, University of Freiburg)</a><br/>
+    <a href="https://timm.haucke.xyz/" target="_blank"><b>Timm Haucke</b> (MIT CSAIL, Beerylab)</a><br/>
+    </p>
     <br/>
-    <table id="affiliations" width="100%" border="0" cellspacing="0" style="text-align: justify; margin-top: -24px; font-family: 'Helvetica', sans-serif; font-size:12pt;" >
+<!--    <table id="affiliations" width="100%" border="0" cellspacing="0" style="text-align: justify; margin-top: -24px; font-family: 'Helvetica', sans-serif; font-size:12pt;" >
         <tr>
-        <td><a href="https://www.senckenberg.de/en/" alt="SENCKENBERG (world of biodiversity)" target="_blank"><img src="images/senckenberg.png" style="height:40px"></a></td><td>&nbsp</td>
-        <td><a href="https://www.mathislab.org" alt="Mathis Group, EPFL" target="_blank"><img src="images/epfl.jpg" style="height:40px"></a></td><td>&nbsp</td>
-        <td><a href="https://uni-freiburg.de/en" alt="University of Freiburg" target="_blank"><img src="images/freiburg.jpg" style="height:45px"></a></td><td>&nbsp</td>
-        <td><a href="https://pure.fh-ooe.at/" alt="Upper Austrian University of Applied Sciences, Campus Hagenberg" target="_blank"><img src="images/fh-ooe.png" style="height:40px"></a></td><td>&nbsp</td>
-        <td><a href="https://allenai.org/" alt="Ai2, Allen Institute for Artificial intelligence" target="_blank"><img src="images/logo-Ai2.jpeg" style="height:40px"></a></td><td>&nbsp</td>
+        <td><a href="https://www.senckenberg.de/en/" alt="SENCKENBERG (world of biodiversity)" target="_blank"><img src="senckenberg.png" style="height:40px"></a></td><td>&nbsp</td>
+        <td><a href="https://www.mathislab.org" alt="Mathis Group, EPFL" target="_blank"><img src="epfl.jpg" style="height:40px"></a></td><td>&nbsp</td>
+        <td><a href="https://pure.fh-ooe.at/" alt="Upper Austrian University of Applied Sciences, Campus Hagenberg" target="_blank"><img src="fh-ooe.png" style="height:40px"></a></td><td>&nbsp</td>
         <br/>
         </tr>
-    </table>
+    </table>-->
 </div>
 
 <script> myResize(); myResize(); myResize();</script>
