@@ -72,7 +72,9 @@ a:active {
      <li class="u-m-university"> <a class="u-m-link" id="contactLink" href="#contact" tabindex="0"> Contact </a> </li>
      <li class="u-m-university"> <a class="u-m-link" id="termsofuseLink" href="#termsofuse" tabindex="0"> Terms of Use </a> </li>
      <li class="u-m-university"> <a class="u-m-link" id="organizersLink" href="#organizers" tabindex="0"> Organizers </a> </li>
-     <li class="u-m-university"> <a class="u-m-link" href="https://camtrapai.github.io/workshops-overview.html" tabindex="0"> Archive</a> </li>
+     <li class="u-m-university"> <a class="u-m-link" href="https://camtrapai.github.io/workshops-overview.html" tabindex="0"> Archive</a>
+     <li class="u-m-university"> <a class="u-m-link" id="speakersLink" href="#speakers" tabindex="0"> Speakers </a> </li>
+     </li>
   </ul>
   </div>
 </div>
@@ -162,9 +164,14 @@ a:active {
         </div>
       </td>      
       <td valign="top" style="background-color: #FFFFFF;">
-        <div id="myRight" style="margin-top:-33px; text-align: justify; font-size: 14pt; font-family: 'Helvetica', sans-serif;">
-          <div id="organizers">
+        <div id="myRight" style="text-align: justify; font-size: 14pt; font-family: 'Helvetica', sans-serif;">          <div id="speakers">
+            <b style="font-size:18pt">Speakers</b><hr/>
           </div>
+          <br/>
+          <div id="organizers">
+            <b style="font-size:18pt">Workshop Series Organizers</b><hr/>
+          </div>
+          <br/>
           <div id="about">
             <b style="font-size:18pt">About the Workshop Series</b><hr/>
             <script> document.write(getSummary()); </script>
@@ -178,6 +185,8 @@ a:active {
           <div id="termsofuse">
             <b style="font-size:18pt">Website Terms of Use</b><hr/>
             <script> document.write(getTermsOfUse()); </script>
+          </div>          
+        </div>
           </div>          
         </div>
       </td>
@@ -214,7 +223,12 @@ a:active {
     <b style="font-size:18pt">Workshop Programme</b><hr/>
   </div>
   <br/>
+  <div id="speakersMobile">
+    <b style="font-size:18pt">Keynote Speakers</b><hr/>
+  </div>
+  <br/>
   <div id="organizersMobile">
+    <b style="font-size:18pt">Workshop Series Organizers</b><hr/>
   </div>
   <br/>
   <div id="aboutMobile">
@@ -273,6 +287,7 @@ function myResize() {
     document.getElementById("contactLink").href = "#contactMobile";
     document.getElementById("termsofuseLink").href = "#termsofuseMobile";
     document.getElementById("organizersLink").href = "#organizersMobile";
+    document.getElementById("speakersLink").href = "#speakersMobile";
     document.getElementById("myMobile").style.width = getWidth()+"px";
   }
   else {
@@ -284,6 +299,7 @@ function myResize() {
     document.getElementById("contactLink").href = "#contact";
     document.getElementById("termsofuseLink").href = "#termsofuse";
     document.getElementById("organizersLink").href = "#organizers";
+    document.getElementById("speakersLink").href = "#speakers";
     document.getElementById("myPC").style.width = getWidth()+"px";
     document.getElementById("myLeft").style.width = getLWidth()+"px";
   }
@@ -305,6 +321,14 @@ function myResize() {
     document.getElementById("registration").appendChild(cln);
     cln = itm.cloneNode(true);
     document.getElementById("registrationMobile").appendChild(cln);
+    itm.remove();
+//
+    var itm = document.getElementById("speakersContent");
+    itm.style.display = "block";
+    var cln = itm.cloneNode(true);
+    document.getElementById("speakers").appendChild(cln);
+    cln = itm.cloneNode(true);
+    document.getElementById("speakersMobile").appendChild(cln);
     itm.remove();
 //
     var itm = document.getElementById("datesContent");
@@ -386,17 +410,54 @@ function showSlides(n) {
 </div>
 
 <div id="registrationContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
-  <b>Registration is now open. Please register <a href="https://docs.google.com/forms/d/e/1FAIpQLSdU-rVy34QL36sAFU7BSdTYedbGL0T2i_GKgD95oUOqbk1ZhQ/viewform?usp=sharing&ouid=109022204726041221869" target="_blank">here.</a></b>
+  <b>Registration is now open! Please register by filling in the form <a href="https://docs.google.com/forms/d/e/1FAIpQLSdU-rVy34QL36sAFU7BSdTYedbGL0T2i_GKgD95oUOqbk1ZhQ/viewform?usp=sharing&ouid=109022204726041221869" target="_blank">here.</a></b>
   <br/>
   Note that the number of on-site participants is strictly limited to 30 people so please register early to secure your place.
 </div>
 
 <div id="datesContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
-  Paper submission deadline: <b style="color:#ee0000">extended to July 9th, 2025</b> at 23:59 (AOE)<br/>
+  <s>Paper submission deadline: July 2nd, 2025 at 23:59 (AOE)</s><br/>
   Internal review deadline: August 7th, 2025<br/>
   Notification of authors: August 14th, 2025<br/>
   Camera-ready deadline: <b>August 28th, 2025</b> at 23:59 (AOE)
   <br/>
+</div>
+
+<div id="speakersContent">
+  <table id="pubstab">
+    <tr>
+      <td>
+        <img src="images/ulrik.jpg" alt="Ulrik Pagh Schultz Lundquist">
+        <a href="https://www.sdu.dk/en/forskning/ans/steering_committee/steering-commitee/ulrik_pagh_schultz_lundquist" target="_blank">
+          Ulrik Pagh Schultz Lundquist
+        </a>
+        <div class="affiliation">University of Southern Denmark</div>
+      </td>
+      <td>
+        <img src="images/iain_couzin.jpeg" alt="Iain D. Couzin">
+        <a href="https://www.ab.mpg.de/person/98158/2736" target="_blank">
+          Iain D. Couzin
+        </a>
+        <div class="affiliation">Max Planck Institute of Animal Behavior</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="images/tanya.jpg" alt="Tanya Berger-Wolf">
+        <a href="https://cse.osu.edu/people/berger-wolf.1" target="_blank">
+          Tanya Berger‑Wolf
+        </a>
+        <div class="affiliation">The Ohio State University</div>
+      </td>
+      <td>
+        <img src="images/dan_morris.png" alt="Dan Morris">
+        <a href="https://research.google/people/danmorris/" target="_blank">
+          Dan Morris
+        </a>
+        <div class="affiliation">Google AI for Nature & Society</div>
+      </td>
+    </tr>
+  </table>
 </div>
 
 <div id="submissionsContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: justify; font-family: 'Helvetica', sans-serif;">
@@ -444,7 +505,8 @@ function showSlides(n) {
   <br/><br/>
   The address for on-site participants is:</br>
   Allen Institute for AI</br>Northlake Commons</br>3800 Latona Ave NE Suite 300</br>Seattle, WA 98105</br>
-  </br>
+  </br>  Google AI for Nature and Society
+  
   <em>A link for joining online will be provided here prior to the meeting!</em>
   <br/>
 </div>
@@ -460,7 +522,6 @@ function showSlides(n) {
 </div>
 
 <div id="organizersContent" style="width:100%; display: none; vertical-align: top; margin-top: 32px; text-align: left; font-family: 'Helvetica', sans-serif;">
-    <b style="font-size:18pt">Workshop Series Organizers</b><hr/><br/>
     <b style="font-size:14pt">Team at University of Bristol</b><br/>
     <table id="bristol-team" width="80%" border="0" cellspacing="0" style="text-align: justify; margin-top: 4px; font-family: 'Helvetica', sans-serif; font-size:14pt;" >
       <tr>
