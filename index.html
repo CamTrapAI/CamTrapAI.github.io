@@ -131,6 +131,10 @@ a:active {
             <b style="font-size:18pt">Information</b><hr/>
           </div>
           <br/>
+          <div id="registration">
+            <b style="font-size:18pt">Workshop Registration</b><hr/>
+          </div>
+          <br/>
           <div id="dates">
             <b style="font-size:18pt">Dates and Deadlines</b><hr/>
           </div>
@@ -184,6 +188,10 @@ a:active {
 <div class="myBlock" id="myMobile" style="margin-left:49px; margin-top:288px; text-align: justify; font-size: 14pt; font-family: 'Helvetica', sans-serif;">
   <div id="informationMobile">
     <b style="font-size:18pt">Information</b><hr/>
+  </div>
+  <br/>
+  <div id="registrationMobile">
+    <b style="font-size:18pt">Registration</b><hr/>
   </div>
   <br/>
   <div id="datesMobile">
@@ -291,6 +299,14 @@ function myResize() {
     document.getElementById("informationMobile").appendChild(cln);
     itm.remove();
 //
+    var itm = document.getElementById("registrationContent");
+    itm.style.display = "block";
+    var cln = itm.cloneNode(true);
+    document.getElementById("registration").appendChild(cln);
+    cln = itm.cloneNode(true);
+    document.getElementById("registrationMobile").appendChild(cln);
+    itm.remove();
+//
     var itm = document.getElementById("datesContent");
     itm.style.display = "block";
     var cln = itm.cloneNode(true);
@@ -367,6 +383,12 @@ function showSlides(n) {
   We are happy to announce that the <b>2025 Workshop</b> on Camera Traps, AI, and Ecology will be held as a hybrid event in Seattle, USA hosted by <a href="https://allenai.org/">Ai2</a> on <b>September 9th and 10th</b>.
   <br/> <br/>
   <a href="https://allenai.org/" alt="Allen AI" target="_blank"><img src="images/logo-Ai2.jpeg" style="height:75px"></a>
+</div>
+
+<div id="registrationContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
+  <b>Registration is now open. Please register <a href="https://docs.google.com/forms/d/e/1FAIpQLSdU-rVy34QL36sAFU7BSdTYedbGL0T2i_GKgD95oUOqbk1ZhQ/viewform?usp=sharing&ouid=109022204726041221869" target="_blank">here.</a></b>
+  <br/>
+  Note that the number of on-site participants is strictly limited to 30 people so please register early to secure your place.
 </div>
 
 <div id="datesContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
