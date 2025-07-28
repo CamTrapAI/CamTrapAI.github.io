@@ -79,7 +79,47 @@ line-height: 1.2em;
 }
 
 
-
+<style>
+  #speakersContent {
+    font-family: 'Helvetica', sans-serif;
+    width: 100%;
+    margin-top: 0;
+  }
+  #pubstab {
+    width: 100%;
+    border-collapse: collapse;     /* remove default cell gaps */
+    margin-top: 0px;
+    font-size: 12pt;
+  }
+  #pubstab td {
+    width: 50%;
+    padding: 15px;                  /* less padding */
+    text-align: center;            /* center everything */
+    vertical-align: top;
+  }
+  #pubstab img {
+    display: block;
+    width: 180px;                  /* uniform width */
+    height: 220px;                 /* uniform height */
+    object-fit: cover;             /* crop/scale to fill */
+    margin: 0 auto 8px;            /* small gap below image */
+    border: 1px solid #ccc;
+  }
+  #pubstab a {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #0066cc;
+    text-decoration: none;
+  }
+  #pubstab a:hover {
+    text-decoration: underline;
+  }
+  .affiliation {
+    font-size: 0.9em;
+    color: #333;
+  }
+</style>
 
 h1 {
 	position: relative;
