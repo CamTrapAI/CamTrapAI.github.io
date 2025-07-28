@@ -73,7 +73,7 @@ a:active {
      <li class="u-m-university"> <a class="u-m-link" id="termsofuseLink" href="#termsofuse" tabindex="0"> Terms of Use </a> </li>
      <li class="u-m-university"> <a class="u-m-link" id="organizersLink" href="#organizers" tabindex="0"> Organizers </a> </li>
      <li class="u-m-university"> <a class="u-m-link" href="https://camtrapai.github.io/workshops-overview.html" tabindex="0"> Archive</a>
-     <li class="u-m-university"> <a class="u-m-link" id="speakersLink" href="#speakers" tabindex="0"> Speakers </a> </li>
+     <li class="u-m-university"> <a class="u-m-link" id="speakersLink" href="#speakers" tabindex="0"> Keynote Speakers </a> </li>
      </li>
   </ul>
   </div>
@@ -165,7 +165,7 @@ a:active {
       </td>      
       <td valign="top" style="background-color: #FFFFFF;">
         <div id="myRight" style="text-align: justify; font-size: 14pt; font-family: 'Helvetica', sans-serif;">          <div id="speakers">
-            <b style="font-size:18pt">Speakers</b><hr/>
+            <b style="font-size:18pt">Keynote Speakers</b><hr/>
           </div>
           <br/>
           <div id="organizers">
@@ -423,42 +423,152 @@ function showSlides(n) {
   <br/>
 </div>
 
-<div id="speakersContent">
-  <table id="pubstab">
-    <tr>
-      <td>
-        <img src="images/ulrik.jpg" alt="Ulrik Pagh Schultz Lundquist">
-        <a href="https://www.sdu.dk/en/forskning/ans/steering_committee/steering-commitee/ulrik_pagh_schultz_lundquist" target="_blank">
-          Ulrik Pagh Schultz Lundquist
-        </a>
-        <div class="affiliation">University of Southern Denmark</div>
-      </td>
-      <td>
-        <img src="images/iain_couzin.jpeg" alt="Iain D. Couzin">
-        <a href="https://www.ab.mpg.de/person/98158/2736" target="_blank">
-          Iain D. Couzin
-        </a>
-        <div class="affiliation">Max Planck Institute of Animal Behavior</div>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <img src="images/tanya.jpg" alt="Tanya Berger-Wolf">
-        <a href="https://cse.osu.edu/people/berger-wolf.1" target="_blank">
-          Tanya Berger‑Wolf
-        </a>
-        <div class="affiliation">The Ohio State University</div>
-      </td>
-      <td>
-        <img src="images/dan_morris.png" alt="Dan Morris">
-        <a href="https://research.google/people/danmorris/" target="_blank">
-          Dan Morris
-        </a>
-        <div class="affiliation">Google AI for Nature & Society</div>
-      </td>
-    </tr>
-  </table>
-</div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speakers Table</title>
+  <style>
+      #speakersContent {
+          width: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+      }
+
+      #pubstab {
+          width: 100%;
+          border-collapse: separate;
+          border-spacing: 20px;
+          table-layout: fixed;
+      }
+
+      #pubstab td {
+          width: 50%;
+          vertical-align: top;
+          padding: 20px;
+          border: 1px solid #e0e0e0;
+          border-radius: 8px;
+          background-color: #fafafa;
+          text-align: center;
+      }
+
+      #pubstab img {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-bottom: 15px;
+          border: 3px solid #ddd;
+      }
+
+      #pubstab a {
+          display: block;
+          font-size: 18px;
+          font-weight: bold;
+          color: #2c5aa0;
+          text-decoration: none;
+          margin-bottom: 10px;
+          line-height: 1.3;
+      }
+
+      #pubstab a:hover {
+          text-decoration: underline;
+          color: #1a3d6b;
+      }
+
+      .affiliation {
+          font-size: 14px;
+          color: #666;
+          font-weight: 600;
+          margin-bottom: 8px;
+      }
+
+      .detailed-info {
+          font-size: 13px;
+          color: #555;
+          line-height: 1.4;
+          text-align: left;
+          margin-top: 12px;
+          padding-top: 12px;
+          border-top: 1px solid #e0e0e0;
+      }
+
+      .title {
+          font-weight: 600;
+          color: #333;
+      }
+
+      .departments {
+          margin-top: 5px;
+          font-style: italic;
+      }
+
+      @media (max-width: 768px) {
+          #pubstab {
+              border-spacing: 10px;
+          }
+          
+          #pubstab td {
+              display: block;
+              width: 100%;
+              margin-bottom: 20px;
+          }
+          
+          #pubstab tr {
+              display: block;
+          }
+      }
+  </style>
+</head>
+<body>
+  <div id="speakersContent">
+      <table id="pubstab">
+          <tr>
+            <td>
+              <img src="images/tanya.jpg" alt="Tanya Berger-Wolf">
+              <a href="https://cse.osu.edu/people/berger-wolf.1" target="_blank">
+                  Tanya Berger‑Wolf
+              </a>
+              <div class="affiliation">The Ohio State University</div>
+              <div class="detailed-info">
+                  <div style="margin-top: 8px;">Tanya Berger-Wolf is the Director of the Translational Data Analytics Institute  and a Professor of Computer Science Engineering, Electrical and Computer Engineering, as well as  Evolution, Ecology, and Organismal Biology at the Ohio State University.</div>
+              </div>
+          </td>
+              <td>
+                  <img src="images/iain_couzin.jpeg" alt="Iain D. Couzin">
+                  <a href="https://www.ab.mpg.de/person/98158/2736" target="_blank">
+                      Iain D. Couzin
+                  </a>
+                  <div class="affiliation">Max Planck Institute of Animal Behavior</div>
+                  <div class="detailed-info">
+                      <div style="margin-top: 8px;">Iain Couzin is Director of the Max Planck Institute of Animal Behavior and a Professor and Director (Speaker) of the German Research Foundation (DFG) Excellence Cluster “Centre for the Advanced Study of Collective Behaviour” at the University of Konstanz, Germany.</div>
+                  </div>
+              </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="images/dan_morris.png" alt="Dan Morris">
+              <a href="https://research.google/people/danmorris/" target="_blank">
+                  Dan Morris
+              </a>
+              <div class="affiliation">Google AI for Nature</div>
+              <div class="detailed-info">
+                  <div style="margin-top: 8px;">Dan Morris is a Senior Staff Research Scientist at Google AI for Nature. Previously, he was Principal Scientist and Program Director at Microsoft AI for Earth.</div>
+              </div>
+          </td>
+                        <td>
+                  <img src="images/ulrik.jpg" alt="Ulrik Pagh Schultz Lundquist">
+                  <a href="https://www.sdu.dk/en/forskning/ans/steering_committee/steering-commitee/ulrik_pagh_schultz_lundquist" target="_blank">
+                      Ulrik Pagh Schultz Lundquist
+                  </a>
+                  <div class="affiliation">University of Southern Denmark</div>
+                  <div class="detailed-info">
+                      <div style="margin-top: 8px;">Ulrik Pagh Schultz Lundquist is Full Professor and Head of the Drone Center (SDU UAS) at the University of Southern Denmark. In addition to coordinating the WildDrone MSCN, he also coordinates the IFD GENIUS project.</div>
+                  </div>
+              </td>
+          </tr>
+      </table>
+  </div>
 
 <div id="submissionsContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: justify; font-family: 'Helvetica', sans-serif;">
   We invite you to submit <b>extended abstracts</b> (4 pages, excl. references) and <b>full papers</b> (6 pages, excl. references) related to AI image analysis of
