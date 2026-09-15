@@ -1,0 +1,881 @@
+f<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-gb" xml:lang="en-gb" style="overflow-x:hidden;" onscroll = "myScroll()"; onresize="myResize()";>
+<head>
+    <title>Camera Traps, AI, and Ecology - International Workshop Archive</title>
+    <base target="_top"></base>
+    <meta name="description" content="Camera Traps, AI, and Ecology - International Workshop Series"/>
+    <meta name="ROBOTS" content="INDEX, FOLLOW"/>
+    <meta name="Keywords" content="camera trap, ecology, animal biometrics, computer vision, wildlife, conservation"/>
+    <meta HTTP-EQUIV="Keywords" CONTENT="camera trap, ecology, animal biometrics, computer vision, wildlife, conservation"/>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="en-GB" name="DCTERMS.language" />
+    <meta content="text/html" name="DCTERMS.format" />
+    <meta content="http://www.bristol.ac.uk/university/web/terms-conditions.html" name="DCTERMS.rights" />
+    <meta property="og:image" content="camtrapaiws_bw.png" />   
+    <meta name="viewport" content="width=device-width, initial-scale=1;user-scalable=0;maximum-scale=1;">
+    <link rel="stylesheet" type="text/css" media="screen" href="uobcms_corporate.css" />
+</head>
+
+<style>
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  left: -9px;
+}
+
+/* Schedule table styling */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Helvetica', sans-serif;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.schedule-table th {
+  background-color: #2E5A88;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.day-header {
+  background-color: #4A90E2;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.time-slot {
+  font-weight: bold;
+  color: #2E5A88;
+  width: 120px;
+  background-color: #f8f9fa;
+}
+
+.keynote {
+  background-color: #e8f4f8;
+  border-left: 4px solid #2E5A88;
+}
+
+.keynote .speaker-name {
+  font-weight: bold;
+  color: #2E5A88;
+  font-size: 16px;
+}
+
+.break-slot {
+  background-color: #fff3cd;
+  color: #856404;
+  font-style: italic;
+  text-align: center;
+}
+
+.orga-slot {
+  background-color: #f4f8e8;
+}
+
+.paper-slot {
+  background-color: #f8f9fa;
+  border-left: 4px solid #28a745;
+}
+
+.lunch-slot {
+  background-color: #ffeaa7;
+  font-style: italic;
+  text-align: center;
+}
+
+.session-title {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.session-body {
+  font-size: 16px;
+}
+
+.tbc {
+  color: #666;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.online-link {
+  font-weight: bold;
+  color: #d63031;
+}
+</style>
+
+<style>
+/* unvisited link */
+a:link {
+    color: #2E5A88;
+}
+/* visited link */
+a:visited {
+    color: #2E5A88;
+}
+/* mouse over link */
+a:hover {
+    color: #2E5A88;
+}
+/* selected link */
+a:active {
+    color: #2E5A88;
+}
+</style>
+
+
+
+
+<script>
+ function goToUniBristol()    { window.open("https://www.bristol.ac.uk"); }
+ function goToUniJena()    { window.open("https://www.uni-jena.de/en"); }
+ function getTitle()   { return "<b>CamTrapAI Workshop Series</b>"; }
+ function getHeader() { return "<b>INTERNATIONAL WORKSHOP SERIES</b><br/><b>ON CAMERA TRAPS, AI, &amp; ECOLOGY</b><br/><br/><b> BRINGING PEOPLE, NATURE &amp; AI TOGETHER</b><br/><br/><b><font color='#FFFFFF' size='5'>5th International Workshop: Sep 9+10, 2025 in Seattle (hybrid)</font></b><br/><a href='https://camtrapai.github.io'><font color='#FFFFFF'>Back to home</font></a><br/>"}
+ function getSummary() { return "The international workshop series on camera traps and AI analysis for wildlife monitoring including associated ecological and data collection methods. It regularly runs as expert talks, tutorials, discussions, and follow-up sessions in a hybrid format. The workshops bring together three communities: camera trap data producers (e.g. nature parks and reserves), scientific practitioners (e.g. ecologists and conservationists), and AI analysis providers (e.g. computer scientists and engineers). The aim of the workshops is to promote exchange between these different communities, link wildlife data and AI methods, and initiate new interdisciplinary projects amongst attendees. The sessions target at field practitioners, academics, researchers, students, and subject enthusiasts."}
+ function getContact() { return "You can email the workshop via the camtrapai[.at.]gmail.com address. To chat during or after the workshop, directly join our Slack chat via an email to aiforconservation[.at.]gmail.com and search for our channel called #camtrapai-workshops within Slack. See you there!<br/>"}
+ function getTermsOfUse() { return "<table><tr><td>See <a href='https://www.bristol.ac.uk/style-guides/web/policies/legal/terms' target='_blank'>University of Bristol Website Terms of Use</a></td></tr></table>"}
+</script>
+
+<body onscroll = "myScroll()"; onresize="myResize()"; style="margin: 0; min-width: 1280px; max-width: 100%; background-color: #FFFFFF; background-size: cover; padding: 0px; overflow-x:hidden; width:100%;">
+
+   <div class="uob-mainnav-container clearfix" id="top">
+  <div id="csnav">
+  <ul class="width-master uob-mainnav" role="navigation" id="csmenu" style="width:100%; margin-left:0;">
+     <li class="u-m-university"> <img style="cursor: pointer;" src="images/uni-bristol.png" height="35px" width="100px" onclick="javascript:goToUniBristol()"/></li>
+     <li class="u-m-university"> <img style="cursor: pointer;" src="images/uni-jena.png" height="35px" width="100px" onclick="javascript:goToUniJena()"/></li>
+     <li class="u-m-university"> <a class="u-m-link" href="https://camtrapai.github.io" tabindex="0"> Home </a></li>
+     <li class="u-m-university"> <a class="u-m-link" id="aboutLink" href="#about" tabindex="0"> About </a> </li>
+     <li class="u-m-university"> <a class="u-m-link" id="programmeLink" href="#programme" tabindex="0"> Programme </a> </li>
+     <li class="u-m-university"> <a class="u-m-link" id="contactLink" href="#contact" tabindex="0"> Contact </a> </li>
+     <li class="u-m-university"> <a class="u-m-link" id="termsofuseLink" href="#termsofuse" tabindex="0"> Terms of Use </a> </li>
+     <li class="u-m-university"> <a class="u-m-link" id="organizersLink" href="#organizers" tabindex="0"> Organizers </a> </li>
+     <li class="u-m-university"> <a class="u-m-link" href="https://camtrapai.github.io/workshops-overview.html" tabindex="0"> Archive</a>
+     <li class="u-m-university"> <a class="u-m-link" id="speakersLink" href="#speakers" tabindex="0"> Keynote Speakers </a> </li>
+     </li>
+  </ul>
+  </div>
+</div>
+<div class="container">
+  <img id="topup" src="images/top.png" onclick="javascript:goToTop()" style="cursor: pointer; width:32px; height:32px; margin-left:7px; position: absolute">
+
+  <div class="mySlides">
+    <div class="myFlip">
+      <img src="images/introsimple.gif" style="width:100%; height:320px; position: absolute">
+      <img src="images/camtrapai.gif" style="width:100%; height:320px; position: absolute">
+      <div style="position: absolute">
+          <img src="images/camtrapaiws.gif" style="height:177px; margin-top:92px; margin-left:50px">
+        <div style="width:90%; margin-left:59px; margin-top:-254px; color: #FFFFFF; font-size: 27pt; font-family: 'Helvetica', serif;">
+          <script>document.write(getTitle());</script>
+        </div>
+        <div style="width:90%; margin-left:280px; margin-top:16px; color: #FFFFFF; font-size: 12pt; font-family: 'Helvetica', sans-serif;">
+          <script>document.write(getHeader());</script>
+        </div>
+        <a href="" z-index: 999; target="_blank" title="Go to Google Scholar Profile">
+          <img src="" alt="" id="myScholar" style="width:48px; position: absolute; margin-top:-48px;" />
+        </a>
+        <a href="" z-index: 999; target="_blank" title="Go to DBLP Profile">
+          <img src="" alt="" id="myDBLP" style="width:48px; position: absolute; margin-top:-118px;" />
+        </a>
+        <a href="" z-index: 999; target="_blank" title="Go to Papers with Code">
+          <img src="" alt="" id="myPWC" style="width:44px; position: absolute; margin-top:-188px;" />
+        </a>
+      </div>
+    </div>
+
+    <div class="myFlip">
+      <img src="images/introsimple.gif" style="width:100%; height:256px; position: absolute">
+      <img src="images/camtrapai.gif" style="width:100%; height:256px; position: absolute">
+      <div style="position: absolute">
+        <img src="images/camtrapaiws.gif" style="height:166px; margin-top:62px; margin-left:50px">
+        <div style="position: absolute; margin-left:50px; margin-top:-219px; color: #FFFFFF; font-size: 16pt; font-family: 'Helvetica', serif;">
+          <script>document.write(getTitle());</script>
+        </div>
+        <div style="margin-left:254px; margin-top:-176px; color: #FFFFFF; font-size: 11pt; font-family: 'Helvetica', sans-serif;">
+          <script>document.write(getHeader());</script>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<div class="myBlock" id="myPC" style="margin-left:49px; margin-top:345px; text-align: justify; font-size: 14pt; font-family: 'Helvetica', sans-serif;">
+  <table width="100%" border="0" cellspacing="14">
+    <tr>
+      <td valign="top" style="background-color: #FFFFFF;">
+        <div id="myLeft" style="text-align: justify; font-size: 14pt; font-family: 'Helvetica', sans-serif;">
+          <div id="information">
+            <b style="font-size:18pt">Information</b><hr/>
+          </div>
+          <br/>
+          <div id="programme">
+            <b style="font-size:18pt">Workshop Programme</b><hr/>
+          </div>
+          <br/>
+          <div id="dates">
+            <b style="font-size:18pt">Dates and Deadlines</b><hr/>
+          </div>
+          <br/>
+          <div id="join">
+            <b style="font-size:18pt">Online and On-site Participation</b><hr/>
+          </div>
+          <br/> 
+          <div id="local">
+            <b style="font-size:18pt">Logistical Questions</b><hr/>
+          </div>
+          <br/>    
+        </div>
+      </td>
+      <td valign="top" style="background-color: #FFFFFF;">
+        <div id="myCenter" style="text-align: justify; font-size: 14pt; font-family: 'Helvetica', sans-serif;">
+        </div>
+      </td>      
+      <td valign="top" style="background-color: #FFFFFF;">
+        <div id="myRight" style="text-align: justify; font-size: 14pt; font-family: 'Helvetica', sans-serif;">          <div id="speakers">
+            <b style="font-size:18pt">Keynote Speakers</b><hr/>
+          </div>
+          <br/>
+          <div id="organizers">
+            <b style="font-size:18pt">Workshop Series Organizers</b><hr/>
+          </div>
+          <br/>
+          <div id="about">
+            <b style="font-size:18pt">About the Workshop Series</b><hr/>
+            <script> document.write(getSummary()); </script>
+          </div>
+          <br/>
+          <div id="contact">
+            <b style="font-size:18pt">Get in Touch</b><hr/>
+            <script> document.write(getContact()); </script>
+          </div>
+          <br/>
+          <div id="termsofuse">
+            <b style="font-size:18pt">Website Terms of Use</b><hr/>
+            <script> document.write(getTermsOfUse()); </script>
+          </div>          
+        </div>
+          </div>          
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="myBlock" id="myMobile" style="margin-left:49px; margin-top:288px; text-align: justify; font-size: 14pt; font-family: 'Helvetica', sans-serif;">
+  <div id="informationMobile">
+    <b style="font-size:18pt">Information</b><hr/>
+  </div>
+  <br/>
+  <div id="programmeMobile">
+    <b style="font-size:18pt">Workshop Programme</b><hr/>
+  </div>
+  <br/>
+  <div id="datesMobile">
+    <b style="font-size:18pt">Dates and Deadlines</b><hr/>
+  </div>
+  <br/>
+  <div id="joinMobile">
+    <b style="font-size:18pt">Online and On-site Participation</b><hr/>
+  </div>
+  <br/> 
+  <div id="localMobile">
+    <b style="font-size:18pt">Logistical Questions</b><hr/>
+  </div>
+  <br/>    
+  <div id="speakersMobile">
+    <b style="font-size:18pt">Keynote Speakers</b><hr/>
+  </div>
+  <br/>
+  <div id="organizersMobile">
+    <b style="font-size:18pt">Workshop Series Organizers</b><hr/>
+  </div>
+  <br/>
+  <div id="aboutMobile">
+    <b style="font-size:18pt">About the Workshop Series</b><hr/>
+    <script> document.write(getSummary()); </script>
+  </div>
+  <br/>
+  <div id="contactMobile">
+    <b style="font-size:18pt">Get in Touch</b><hr/>
+    <script> document.write(getContact()); </script>
+  </div>
+  <br/>
+  <div id="termsofuseMobile">
+    <b style="font-size:18pt">Website Terms of Use</b><hr/>
+    <script> document.write(getTermsOfUse()); </script>
+  </div>  
+</div>
+
+<script>
+var slideIndex = 1;
+var stopRotation = 1;
+var firstRun = 1;
+showSlides(slideIndex);
+function getNWidth() { return window.innerWidth * 0.57 - 160;}
+function getScroll() { return (document.documentElement.scrollTop || document.body.scrollTop) - 30;}
+function getSMWidth() { return window.innerWidth - 92;}
+function getRWidth() { return window.innerWidth - 122;}
+function getWidth() { return window.innerWidth - 110;}
+function getLWidth() { return window.innerWidth * 0.57 - 160;}
+
+function goToTop() {
+  document.documentElement.scrollTop = "0px";
+  document.body.scrollTop = "0px";
+}
+
+function myScroll() {
+    document.getElementById("topup").style.marginTop = getScroll()+"px";
+}
+
+function myResize() {
+  var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var i;
+  var slides = document.getElementsByClassName("myFlip");
+  var blocks = document.getElementsByClassName("myBlock");
+  for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+  for (i = 0; i < blocks.length; i++) { blocks[i].style.display = "none"; }
+
+  myScroll();
+
+  if (width<1280) {
+    slides[1].style.display = "block";
+    blocks[1].style.display = "block";
+    document.getElementById("topup").style.marginLeft = "7px";
+    document.getElementById("aboutLink").href = "#aboutMobile";
+    document.getElementById("programmeLink").href = "#programmeMobile";
+    document.getElementById("contactLink").href = "#contactMobile";
+    document.getElementById("termsofuseLink").href = "#termsofuseMobile";
+    document.getElementById("organizersLink").href = "#organizersMobile";
+    document.getElementById("speakersLink").href = "#speakersMobile";
+    document.getElementById("myMobile").style.width = getWidth()+"px";
+  }
+  else {
+    slides[0].style.display = "block";
+    blocks[0].style.display = "block";
+    document.getElementById("topup").style.marginLeft = "12px";
+    document.getElementById("aboutLink").href = "#about";
+    document.getElementById("programmeLink").href = "#programme";
+    document.getElementById("contactLink").href = "#contact";
+    document.getElementById("termsofuseLink").href = "#termsofuse";
+    document.getElementById("organizersLink").href = "#organizers";
+    document.getElementById("speakersLink").href = "#speakers";
+    document.getElementById("myPC").style.width = getWidth()+"px";
+    document.getElementById("myLeft").style.width = getLWidth()+"px";
+  }
+
+  if (firstRun>0) {
+    firstRun--;
+//
+    var itm = document.getElementById("informationContent");
+    itm.style.display = "block";
+    var cln = itm.cloneNode(true);
+    document.getElementById("information").appendChild(cln);
+    cln = itm.cloneNode(true);
+    document.getElementById("informationMobile").appendChild(cln);
+    itm.remove();
+//
+    var itm = document.getElementById("speakersContent");
+    itm.style.display = "block";
+    var cln = itm.cloneNode(true);
+    document.getElementById("speakers").appendChild(cln);
+    cln = itm.cloneNode(true);
+    document.getElementById("speakersMobile").appendChild(cln);
+    itm.remove();
+//
+    var itm = document.getElementById("datesContent");
+    itm.style.display = "block";
+    var cln = itm.cloneNode(true);
+    document.getElementById("dates").appendChild(cln);
+    cln = itm.cloneNode(true);
+    document.getElementById("datesMobile").appendChild(cln);
+    itm.remove();    
+//
+    var itm = document.getElementById("joinContent");
+    itm.style.display = "block";
+    var cln = itm.cloneNode(true);
+    document.getElementById("join").appendChild(cln);
+    cln = itm.cloneNode(true);
+    document.getElementById("joinMobile").appendChild(cln);
+    itm.remove();
+//
+    var itm = document.getElementById("localContent");
+    itm.style.display = "block";
+    var cln = itm.cloneNode(true);
+    document.getElementById("local").appendChild(cln);
+    cln = itm.cloneNode(true);
+    document.getElementById("localMobile").appendChild(cln);
+    itm.remove();    
+//
+    var itm = document.getElementById("programmeContent");
+    itm.style.display = "block";
+    var cln = itm.cloneNode(true);
+    document.getElementById("programme").appendChild(cln);
+    cln = itm.cloneNode(true);
+    document.getElementById("programmeMobile").appendChild(cln);
+    itm.remove();
+//
+    itm = document.getElementById("organizersContent");
+    itm.style.display = "block";
+    cln = itm.cloneNode(true);
+    document.getElementById("organizers").appendChild(cln);
+    cln = itm.cloneNode(true);
+    document.getElementById("organizersMobile").appendChild(cln);
+    itm.remove();
+//
+  }
+}
+
+function currentSlide(n) {
+  stopRotation = 1;
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+  if (!stopRotation) slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  if (slideIndex == 2) setTimeout(showSlides, 15000);
+  else setTimeout(showSlides, 10000);
+}
+</script>
+
+<div id="informationContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
+  We are happy to announce that the <b>2025 Workshop</b> on Camera Traps, AI, and Ecology will be held as a hybrid event in Seattle, USA hosted by <a href="https://allenai.org/">Ai2</a> on <b>September 9th and 10th. Registration is now open! Please register by filling in the form <a href="https://docs.google.com/forms/d/e/1FAIpQLSdU-rVy34QL36sAFU7BSdTYedbGL0T2i_GKgD95oUOqbk1ZhQ/viewform?usp=sharing&ouid=109022204726041221869" target="_blank">here.</a></b>
+  Note that the number of on-site participants is strictly limited to 30 people so please register early to secure your place. <font class="online-link">You can join online via:</font> <a class="online-link" href="https://meet.google.com/dns-fitn-sgr" target="_blank">https://meet.google.com/dns-fitn-sgr</a>
+  <br/> <br/>
+  <a href="https://allenai.org/" alt="Allen AI" target="_blank"><img src="images/logo-Ai2.jpeg" style="height:75px"></a>
+</div>
+
+<div id="datesContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
+  <s>Paper submission deadline: July 2nd, 2025 at 23:59 (AOE)</s><br/>
+  <s>Notification of authors: August 14th, 2025</s><br/>
+  <s>Camera-ready deadline: August 28th, 2025 at 23:59 (AOE)</s><br/>
+  <b>Workshop: September 9th and 10th, 2025</b>
+  <br/>
+</div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speakers Table</title>
+  <style>
+      #speakersContent {
+          width: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+      }
+
+      #pubstab {
+          width: 100%;
+          border-collapse: separate;
+          border-spacing: 20px;
+          table-layout: fixed;
+      }
+
+      #pubstab td {
+          width: 50%;
+          vertical-align: top;
+          padding: 20px;
+          border: 1px solid #e0e0e0;
+          border-radius: 8px;
+          background-color: #fafafa;
+          text-align: center;
+      }
+
+      #pubstab img {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-bottom: 15px;
+          border: 3px solid #ddd;
+      }
+
+      #pubstab a {
+          display: block;
+          font-size: 18px;
+          font-weight: bold;
+          color: #2c5aa0;
+          text-decoration: none;
+          margin-bottom: 10px;
+          line-height: 1.3;
+      }
+
+      #pubstab a:hover {
+          text-decoration: underline;
+          color: #1a3d6b;
+      }
+
+      .affiliation {
+          font-size: 14px;
+          color: #666;
+          font-weight: 600;
+          margin-bottom: 8px;
+      }
+
+      .detailed-info {
+          font-size: 13px;
+          color: #555;
+          line-height: 1.4;
+          text-align: left;
+          margin-top: 12px;
+          padding-top: 12px;
+          border-top: 1px solid #e0e0e0;
+      }
+
+      .title {
+          font-weight: 600;
+          color: #333;
+      }
+
+      .departments {
+          margin-top: 5px;
+          font-style: italic;
+      }
+
+      @media (max-width: 768px) {
+          #pubstab {
+              border-spacing: 10px;
+          }
+          
+          #pubstab td {
+              display: block;
+              width: 100%;
+              margin-bottom: 20px;
+          }
+          
+          #pubstab tr {
+              display: block;
+          }
+      }
+  </style>
+</head>
+<body>
+  <div id="speakersContent">
+      <table id="pubstab">
+          <tr>
+            <td>
+              <img src="images/tanya.jpg" alt="Tanya Berger-Wolf">
+              <a href="https://cse.osu.edu/people/berger-wolf.1" target="_blank">
+                  Tanya Berger‑Wolf
+              </a>
+              <div class="affiliation">The Ohio State University</div>
+              <div class="detailed-info">
+                  <div style="margin-top: 8px;">Tanya Berger-Wolf is the Director of the Translational Data Analytics Institute  and a Professor of Computer Science Engineering, Electrical and Computer Engineering, as well as  Evolution, Ecology, and Organismal Biology at the Ohio State University.</div>
+              </div>
+          </td>
+              <td>
+                  <img src="images/iain_couzin.jpeg" alt="Iain D. Couzin">
+                  <a href="https://www.ab.mpg.de/person/98158/2736" target="_blank">
+                      Iain D. Couzin
+                  </a>
+                  <div class="affiliation">Max Planck Institute of Animal Behavior</div>
+                  <div class="detailed-info">
+                      <div style="margin-top: 8px;">Iain Couzin is Director of the Max Planck Institute of Animal Behavior and a Professor and Director (Speaker) of the German Research Foundation (DFG) Excellence Cluster “Centre for the Advanced Study of Collective Behaviour” at the University of Konstanz, Germany.</div>
+                  </div>
+              </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="images/dan_morris.png" alt="Dan Morris">
+              <a href="https://research.google/people/danmorris/" target="_blank">
+                  Dan Morris
+              </a>
+              <div class="affiliation">Google AI for Nature</div>
+              <div class="detailed-info">
+                  <div style="margin-top: 8px;">Dan Morris is a Senior Staff Research Scientist at Google AI for Nature. Previously, he was Principal Scientist and Program Director at Microsoft AI for Earth.</div>
+              </div>
+          </td>
+                        <td>
+                  <img src="images/ulrik.jpg" alt="Ulrik Pagh Schultz Lundquist">
+                  <a href="https://www.sdu.dk/en/forskning/ans/steering_committee/steering-commitee/ulrik_pagh_schultz_lundquist" target="_blank">
+                      Ulrik Pagh Schultz Lundquist
+                  </a>
+                  <div class="affiliation">University of Southern Denmark</div>
+                  <div class="detailed-info">
+                      <div style="margin-top: 8px;">Ulrik Pagh Schultz Lundquist is Full Professor and Head of the Drone Center (SDU UAS) at the University of Southern Denmark. He is currently coordinator for the WildDrone project.</div>
+                  </div>
+              </td>
+          </tr>
+      </table>
+  </div>
+
+  <div id="programmeContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
+    <p style="margin-bottom: 20px;"><em>All times are shown in Pacific Daylight Time (PDT = UTC-7)</br>Keynote Presentations will be 30min. (+15min. Q&A), Paper Presentations are 15min. (+5min. Q&A)</em></p>  
+    <table class="schedule-table">
+      <tr>
+        <th class="day-header" colspan="2">Day 1 - Tuesday, September 9, 2025</th>
+      </tr>
+      <tr>
+        <td class="time-slot">8:30 - 9:00</td>
+        <td class="break-slot">Arrival and Registration of On-site Attendees + Welcome Coffee</br>
+          <div class="online-link"> Join online via: <a href="https://meet.google.com/dns-fitn-sgr">https://meet.google.com/dns-fitn-sgr</a></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="time-slot">9:00 - 9:15</td>
+        <td class="orga-slot">
+          <div class="session-title">Opening and Welcome from the Organizers</div>
+          <div class="session-body">Christoph Praschl, Paul Bodesheim, Tilo Burghardt</div>
+        </td>
+      </tr>      
+      <tr class="keynote">
+        <td class="time-slot">9:15 - 10:00</td>
+        <td>
+          <div class="session-title">Keynote Presentation #1</div>
+          <div class="speaker-name"><a href="https://www.sdu.dk/en/forskning/ans/steering_committee/steering-commitee/ulrik_pagh_schultz_lundquist" target="_blank">Ulrik Pagh Schultz Lundquist</a> (University of Southern Denmark)</div>          
+          <div class="session-body"><em>WildDrone: Drone Autonomy in the Wild</em></div>
+        </td>
+      </tr>
+      <tr class="paper-slot">
+        <td class="time-slot">10:00 - 10:45</td>
+        <td>
+          <div class="session-title">Paper Session #1: Fine-grained Species Classification</div>
+          <div class="session-body"><em>
+          Text-Assisted Zero-Shot Classification of Fine-Grained Animal Species</br>
+          animl: A Modular Toolkit for Automating Wildlife Species Classification in Python and R
+          </em></div>
+        </td>
+      </tr>      
+      <tr>
+        <td class="time-slot">10:45 - 11:00</td>
+        <td class="break-slot">Coffee Break</td>
+      </tr>
+      <tr class="paper-slot">
+        <td class="time-slot">11:00 - 11:45</td>
+        <td>
+          <div class="session-title">Paper Session #2: Open-source Software for Animal Monitoring</div>
+          <div class="session-body"><em>
+          TeraiNet: An open-source blueprint for the fast and flexible development of local species classification models</br>
+          Akili: Facilitating participatory biodiversity monitoring through software co-development
+          </em></div>
+        </td>
+      </tr>
+      <tr class="keynote">
+        <td class="time-slot">11:45 - 12:30</td>
+        <td>
+          <div class="session-title">Keynote Presentation #3</div>
+          <div class="speaker-name"><a href="https://cse.osu.edu/people/berger-wolf.1" target="_blank">Tanya Berger‑Wolf</a> (Ohio State University)</div>
+          <div class="session-body"><em>Imageomics: Images as the Source of Information about Life</em></div>
+        </td>
+      </tr>      
+      <tr class="lunch-slot">
+        <td class="time-slot">12:30 - 13:30</td>
+        <td>Lunch Break</td>
+      </tr>
+      <tr class="keynote">
+        <td class="time-slot">13:30 - 14:15</td>
+        <td>
+          <div class="session-title">Keynote Presentation #2</div>
+          <div class="speaker-name"><a href="https://jsis.washington.edu/emis/people/ted-schmitt/" target="_blank">Ted Schmitt</a> and Jes Lefcourt (AI2) </div>          
+          <div class="session-body"><em>Ai2’s Conservation Technology</em></div>
+        </td>
+      </tr>
+      <tr class="paper-slot">
+        <td class="time-slot">14:15 - 15:00</td>
+        <td>
+          <div class="session-title">Paper Session #3: Wildlife Tracking and Interaction</div>
+          <div class="session-body"><em>
+          Multi-Object Tracking of Wildlife in Forests Using Nadir Thermal Aerial Videos</br>
+          Tracking Phenological Status and Ecological Interactions in a Hawaiian Cloud Forest Understory using Low-Cost Camera Traps and Visual Foundation Models
+          </em></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="time-slot">15:00 - 15:30</td>
+        <td class="orga-slot">
+          <div class="session-title">Panel Discussion and Wrap-up of Day 1</div>
+          Christoph Praschl, Paul Bodesheim, Tilo Burghardt
+        </td>
+      </tr>        
+      <tr>
+        <td class="time-slot">15:30 - 16:00</td>
+        <td class="break-slot">Coffee Break, End of Day 1 for Online Participants</td>
+      </tr>
+      <tr>
+        <td class="time-slot">16:00 - open end</td>
+        <td>
+          <div class="session-title">Social Event in Seattle</div>
+          <div> Optional: Joint Dinner (self-paid)</div>
+        </td>
+      </tr>
+    </table>
+  
+    <table class="schedule-table" style="margin-top: 30px;">
+      <tr>
+        <th class="day-header" colspan="2">Day 2 - Wednesday, September 10, 2025</th>
+      </tr>
+      <tr>
+        <td class="time-slot">8:30 - 9:00</td>
+        <td class="break-slot">Arrival and Registration of On-site Attendees + Welcome Coffee</br>
+          <div class="online-link"> Join online via: <a href="https://meet.google.com/dns-fitn-sgr" target="_blank">https://meet.google.com/dns-fitn-sgr</a></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="time-slot">9:00 - 9:15</td>
+        <td class="orga-slot">
+          <div class="session-title">Recap of Day 1 and Welcome to Day 2</div>
+          <div class="session-body">Christoph Praschl, Paul Bodesheim, Tilo Burghardt</div>
+        </td>
+      </tr>      
+      <tr class="keynote">
+        <td class="time-slot">9:15 - 10:00</td>
+        <td>
+          <div class="session-title">Keynote Presentation #4</div>
+          <div class="speaker-name"><a href="https://www.ab.mpg.de/person/98158/2736" target="_blank">Iain D. Couzin</a> (Max Planck Institute of Animal Behavior)</div>
+          <div class="session-body"><em>Studying collective behavior in the wild using drones and computer vision</em></div>
+        </td>
+      </tr>
+      <tr class="paper-slot">
+        <td class="time-slot">10:00 - 10:45</td>
+        <td>
+          <div class="session-title">Paper Session #4: Animal Detection and Localization</div>
+          <div class="session-body"><em>
+          Exploiting Unlabeled Images via Pseudo-Labeling and Paste-In Augmentation for Insect Localization in Automated Monitoring</br>
+          HLW2025: Benchmark for Fine-Grain Object Detection of the Hume’s Leaf Warbler with CameraTraps</em></div>
+        </td>
+      </tr>      
+      <tr>
+        <td class="time-slot">10:45 - 11:00</td>
+        <td class="break-slot">Coffee Break</td>
+      </tr>
+      <tr class="keynote">
+        <td class="time-slot">11:00 - 11:45</td>
+        <td>
+          <div class="session-title">Keynote Presentation #5</div>
+          <div class="speaker-name"><a href="https://research.google/people/danmorris/" target="_blank">Dan Morris</a> (Google AI for Nature)</div>
+          <div class="session-body"><em>Accurate models don't guarantee useful results: why heuristics, user training, and ergonomics still matter in the age of fancy-schmancy AI</em></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="time-slot">11:45 - 12:30</td>
+        <td class="orga-slot">
+          <div class="session-title">Panel Discussion, Closing Remarks and Farewell</div>
+          Christoph Praschl, Paul Bodesheim, Tilo Burghardt
+        </td>
+      </tr> 
+      <tr>
+        <td class="time-slot">12:30</td>
+        <td class="session-title">End of Workshop</td>
+      </tr>
+      <tr class="lunch-slot">
+        <td class="time-slot">12:30 - 13:30</td>
+        <td>Joint Lunch for On-Site Attendees</td>
+      </tr>    
+    </table>
+  
+    <div style="margin-top: 20px; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #2E5A88; font-size: 13px;">
+      <strong>Note:</strong> The detailed paper session topics and presentation titles will be announced following the completion of the review process. Each paper session will include 2-3 presentations with time for questions and discussions.
+    </div>
+  </div>
+
+<div id="joinContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
+  Please note that the number of on-site participants is strictly limited to 30 people. 
+  <br/><br/>
+  The address for on-site participants is:</br>
+  Allen Institute for AI</br>Northlake Commons</br>3800 Latona Ave NE Suite 300</br>Seattle, WA 98105</br>
+  </br> Google AI for Nature and Society
+  <br/><br/>  
+  <div class="online-link"> Join online via: <a href="https://meet.google.com/dns-fitn-sgr" target="_blank">https://meet.google.com/dns-fitn-sgr</a></div>
+</div>
+
+<div id="localContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
+  If you have any questions regarding on-site participation, please contact organisers Tilo, Paul and Otto.
+  <br/>
+</div>
+
+
+
+<div id="organizersContent" style="width:100%; display: none; vertical-align: top; margin-top: 32px; text-align: left; font-family: 'Helvetica', sans-serif;">
+    <b style="font-size:14pt">Team at University of Bristol</b><br/>
+    <table id="bristol-team" width="80%" border="0" cellspacing="0" style="text-align: justify; margin-top: 4px; font-family: 'Helvetica', sans-serif; font-size:14pt;" >
+      <tr>
+      <td>
+        <a href="https://tiloburghardt.github.io" target="_blank"><b>Tilo Burghardt</b></a><br/>
+        <a href="https://obrookes.github.io/otto.github.io/" target="_blank"><b>Otto Brookes</b></a><br/>
+        <a href="https://majidmirmehdi.github.io/" target="_blank"><b>Majid Mirmehdi</b></a><br/>
+      </td>
+      <td style="text-align: right;">
+        <a href="http://bristol.ac.uk" alt="University of Bristol" target="_blank"><img src="images/uob.jpg" style="height:75px"></a>
+      </td>
+      <tr>
+    </table>
+    <b style="font-size:14pt">Team at University of Jena</b><br/>
+    <table id="jena-team" width="80%" border="0" cellspacing="0" style="text-align: justify; margin-top: 4px; font-family: 'Helvetica', sans-serif; font-size:14pt;" >
+      <tr>
+      <td>
+        <a href="https://inf-cv.uni-jena.de/bodesheim" target="_blank"><b>Paul Bodesheim</b></a><br/>
+        <a href="https://inf-cv.uni-jena.de/korsch" target="_blank"><b>Dimitri Korsch</b></a><br/>
+        <a href="https://inf-cv.uni-jena.de/denzler" target="_blank"><b>Joachim Denzler</b></a><br/>
+      </td>
+      <td style="text-align: right;">
+        <a href="https://inf-cv.uni-jena.de" alt="Computer Vision Group Jena" target="_blank"><img src="images/cvg-jena.png" style="height:75px"></a>
+        &nbsp&nbsp&nbsp
+        <a href="https://uni-jena.de/en" alt="University of Jena" target="_blank"><img src="images/fsu-jena.png" style="height:75px"></a>
+      </td>
+      <tr>
+    </table>
+    <br/>
+    <b style="font-size:18pt">Programme Committee</b><hr/><br/>
+    <p style="font-size:12pt">
+    <a href="https://pure.fh-ooe.at/de/persons/christoph-praschl" target="_blank"><b>Christoph Praschl</b> (Upper Austrian University of Applied Sciences, Campus Hagenberg)</a><br/>
+    <a href="https://pure.fh-ooe.at/de/persons/david-christian-schedl" target="_blank"><b>David Schedl</b> (Upper Austrian University of Applied Sciences, Campus Hagenberg)</a><br/>
+    <a href="https://www.senckenberg.de/de/institute/senckenberg-museum-fuer-naturkunde-goerlitz/abt-zoologie/sekt-mammalogie/mammalogie-team/" target="_blank"><b>Hjalmar S Kuehl</b> (Senckenberg and TU Dresden)</a><br/>
+    <a href="https://www.mathislab.org/" target="_blank"><b>Alexander Mathis</b> (EPFL, Mathis Group for Computational Neuroscience and AI)</a><br/>
+    <a href="https://inf-cv.uni-jena.de/home/staff/venkataramanan/" target="_blank"><b>Aishwarya Venkataramanan</b> (Computer Vision Group, Friedrich Schiller University Jena)</a><br/>
+    <a href="https://inf-cv.uni-jena.de/home/staff/sickert/" target="_blank"><b>Sven Sickert</b> (Computer Vision Group, Friedrich Schiller University Jena)</a><br/>
+    <a href="https://www.wildlife.uni-freiburg.de/de/mitarbeiterinnen/henrich" target="_blank"><b>Maik Henrich</b> (Wildlife Ecology and Management, University of Freiburg)</a><br/>
+    <a href="https://timm.haucke.xyz/" target="_blank"><b>Timm Haucke</b> (MIT CSAIL, Beerylab)</a><br/>
+    <a href="https://research.google/people/danmorris/" target="_blank"><b>Dan Morris</b> (Google AI for Nature)</a><br/>
+    </p>
+    <br/>
+    <table id="affiliations" width="100%" border="0" cellspacing="0" style="table-layout: fixed; text-align: center; vertical-align: middle; height: 80px;">
+      <tr>
+        <td><a href="https://www.senckenberg.de/en/" target="_blank"><img src="images/senckenberg.png" style="width: 100%; max-width: 120px; height: auto; display: block; margin: 0 auto;"></a></td>
+        <td>&nbsp;</td>
+        <td><a href="https://www.mathislab.org" target="_blank"><img src="images/epfl.jpg" style="width: 100%; max-width: 120px; height: auto; display: block; margin: 0 auto;"></a></td>
+        <td>&nbsp;</td>
+        <td><a href="https://pure.fh-ooe.at/" target="_blank"><img src="images/fh-ooe.png" style="width: 100%; max-width: 120px; height: auto; display: block; margin: 0 auto;"></a></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a href="https://uni-jena.de/en" target="_blank"><img src="images/fsu-jena.png" style="width: 100%; max-width: 120px; height: auto; display: block; margin: 0 auto;"></a></td>
+        <td>&nbsp;</td>
+        <td><a href="https://uni-freiburg.de/en" target="_blank"><img src="images/freiburg.png" style="width: 80%; max-width: 120px; height: auto; display: block; margin: 0 auto;"></a></td>
+        <td>&nbsp;</td>
+        <td><a href="https://www.csail.mit.edu/" target="_blank"><img src="images/mit_csail.jpg" style="width: 100%; max-width: 120px; height: auto; display: block; margin: 0 auto;"></a></td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+</div>
+
+<script> myResize(); myResize(); myResize();</script>
+</body>
+</html>
