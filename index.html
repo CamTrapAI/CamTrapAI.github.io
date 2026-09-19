@@ -255,9 +255,7 @@ a:active {
   <ul class="width-master uob-mainnav" role="navigation" id="csmenu" style="width:100%; margin-left:0;">
      <li class="u-m-university"> <img style="cursor: pointer;" src="images/uni-bristol.png" height="35px" width="100px" onclick="javascript:goToUniBristol()"/></li>
      <li class="u-m-university"> <img style="cursor: pointer;" src="images/uni-jena.png" height="35px" width="100px" onclick="javascript:goToUniJena()"/></li>
-     <!-- TODO: once a University of Fribourg logo is added to images/, replace the text link below with:
-          <li class="u-m-university"> <img style="cursor: pointer;" src="images/unifr.png" height="35px" width="100px" onclick="javascript:goToUniFribourg()"/></li> -->
-     <li class="u-m-university"> <a class="u-m-link" href="https://www.unifr.ch/home/en/" target="_blank" tabindex="0"> Fribourg </a> </li>
+     <li class="u-m-university"> <img style="cursor: pointer;" src="images/uni-fribourg.svg" height="35px" width="100px" onclick="javascript:goToUniFribourg()"/></li>
      <li class="u-m-university"> <a class="u-m-link" href="https://camtrapai.github.io" tabindex="0"> Home </a></li>
      <li class="u-m-university"> <a class="u-m-link" id="aboutLink" href="#about" tabindex="0"> About </a> </li>
      <li class="u-m-university"> <a class="u-m-link" id="programmeLink" href="#programme" tabindex="0"> Programme </a> </li>
@@ -330,6 +328,10 @@ a:active {
             <b style="font-size:18pt">Dates and Deadlines</b><hr/>
           </div>
           <br/>
+          <div id="submission">
+            <b style="font-size:18pt">Talk Submission</b><hr/>
+          </div>
+          <br/>
           <div id="join">
             <b style="font-size:18pt">Online and On-site Participation</b><hr/>
           </div>
@@ -385,6 +387,10 @@ a:active {
   <div id="datesMobile">
     <b style="font-size:18pt">Dates and Deadlines</b><hr/>
   </div>
+  <br/>
+  <div id="submissionMobile">
+  <b style="font-size:18pt">Talk Submission</b><hr/>
+ </div>
   <br/>
   <div id="joinMobile">
     <b style="font-size:18pt">Online and On-site Participation</b><hr/>
@@ -500,7 +506,15 @@ function myResize() {
     document.getElementById("dates").appendChild(cln);
     cln = itm.cloneNode(true);
     document.getElementById("datesMobile").appendChild(cln);
-    itm.remove();    
+    itm.remove(); 
+//
+    var itm = document.getElementById("submissionContent");
+    itm.style.display = "block";
+    var cln = itm.cloneNode(true);
+    document.getElementById("submission").appendChild(cln);
+    cln = itm.cloneNode(true);
+    document.getElementById("submissionMobile").appendChild(cln);
+    itm.remove();  
 //
     var itm = document.getElementById("joinContent");
     itm.style.display = "block";
@@ -559,13 +573,10 @@ function showSlides(n) {
 </script>
 
 <div id="informationContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
-  We are happy to announce that the <b>6th Workshop</b> on Camera Traps, AI, and Ecology will be held as a hybrid event at the <a href="https://www.unifr.ch/home/en/" target="_blank">University of Fribourg</a>, Switzerland, hosted by the <a href="https://www.unifr.ch/bio/en/groups/wegmann/" target="_blank">Wegmann group</a> in the Department of Biology, on <b>Thursday and Friday, January 21st and 22nd, 2027</b>.
-  <br/><br/>
-  A call for papers, registration details, and the link for online participation will be announced here soon.
+  We are happy to announce that the <b>6th Workshop</b> on Camera Traps, AI, and Ecology will be held as a hybrid event at the <a href="https://www.unifr.ch/home/en/" target="_blank">University of Fribourg</a>, Switzerland, hosted by the <a href="https://www.unifr.ch/bio/en/groups/wegmann/" target="_blank">Wegmann group</a> in the Department of Biology, on <b>Thursday and Friday, January 21st and 22nd, 2027. Registration is now open! Talk submission and registration is available <a href="https://forms.gle/TMyPM8ypLkoKkDrn9" target="_blank">here.</a></b>
+
   <br/> <br/>
-  <!-- TODO: once a University of Fribourg logo is added to images/, replace this link with:
-       <a href="https://www.unifr.ch/home/en/" alt="University of Fribourg" target="_blank"><img src="images/unifr.png" style="height:75px"></a> -->
-  <a href="https://www.unifr.ch/home/en/" target="_blank"><b>University of Fribourg</b></a>
+  <a href="https://www.unifr.ch/home/en/" alt="University of Fribourg" target="_blank"><img src="images/uni-fribourg.svg" style="height:100px"></a>
 </div>
 
 <div id="datesContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
@@ -574,6 +585,35 @@ function showSlides(n) {
   Camera-ready deadline: <span class="tbc">Fri 15th Jan 2027</span><br/>
   <b>Workshop: January 21st and 22nd, 2027</b>
   <br/>
+</div>
+
+<div id="submissionContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
+  For this years workshop, we welcome any submissions that cover but are not restricted to the following topics:
+  <br><br>
+
+<ul>
+  <li>Camera trap datasets (images, image sequences, or videos) from wildlife camera traps, insect cameras, or other animal monitoring cameras (e.g., in a Zoo or other controlled environments)</li>
+  <li>Animal detection (in images or videos)</li>
+  <li>Identification of individuals and morphological traits (in images or videos)</li>
+  <li>Species and fine-grained recognition approaches for animals (in images or videos)</li>
+  <li>Animal pose estimation (in images or videos)</li>
+  <li>Tracking of animal movement (in images or videos)</li>
+  <li>Video recognition of animal behaviour</li>
+  <li>Applying AI methods to camera trap data for answering ecological questions, including new ecological questions or important open problems that cannot be solved with current AI approaches</li>
+  <li>Preprocessing of camera trap data, including ethical and legal problems</li>
+</ul>
+
+We offer two options for submitting a talk for the workshop: <br/>
+<br/>
+<strong> Paper Track:</strong> <br/>
+For the paper track we ask for a 4-page paper submission. Accepted papers will be awarded a 15 minute talk + 5 minutes Q&A. If accepted to hold a talk at the CamTrapAI Workshop, speakers will be invited to submit a finalised version of their papers to be published in an IET Special Issue for the workshop. The paper submission deadline is on <b>Fri 27th Nov 2026</b>.
+<br/>
+<br/>
+<strong>Abstract Only Track:</strong> <br/> <!--- todo: define talk length -->
+For the abstract only track we ask for a short abstract submission. Accepted abstracts will be awarded a X minute talk + 5 minutes Q&A. The Abstract Only submission deadline is on <b>Fri 18th Dec 2026</b>.
+<br/>
+<br/>
+<i>Please note, that Abstract Only talks are very limited and we encourage you to submit a paper. </i>
 </div>
 
 <div id="speakersContent">
@@ -634,14 +674,38 @@ function showSlides(n) {
   </div>
 
 <div id="joinContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
-  The workshop will run as a hybrid event. On-site attendance will be at the <a href="https://www.unifr.ch/home/en/" target="_blank">University of Fribourg</a>, Switzerland.
+  The workshop will run as a hybrid event. On-site attendance will be at the <a href="https://www.unifr.ch/home/en/" target="_blank">University of Fribourg</a>, Switzerland on Campus Pérolles with140 on-site places available.
   <br/><br/>
-  The exact venue address and the number of on-site places available are still to be confirmed, as are the registration process and the link for online participation. Details will be published here as soon as they are settled.
+
+  The adress for on-site participation is:
   <br/><br/>
+<div style="display:flex; align-items:flex-start; gap:20px;">
+
+  <div style="width:40%;">
+    <b>Building:</b> Pérolles 04<br>
+    <b>Room:</b> Auditorium 0.110<br>
+    <b>Address:</b> <br/>
+    Rue Albert-Gockel 3, <br/>
+    1700 Fribourg <br/>
+    Switzerland
+
+  </div>
+
+  <div style="width:60%;">
+    <img src="images/uni-fribourg-campus-perolles.jpg" style="width:100%; height:280px; object-fit: cover;">
+  </div>
+
+  </div>
+  <br/>
+  The campus can be reached from Fribourg train station by taking the bus  to the stop "Charmettes" or by a 20 minute walk. Fribourg is easily accessible via a direct train from Bern (30 minutes) or Lausanne (50 minutes).
+
+  
+  <br/>
+  <br/>
   <div class="online-link">Online joining details: to be announced</div>
 </div>
 
-<div id="localContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;">
+<div id="localContent" style="width:100%; display: none; vertical-align: top; margin-top: 0px; text-align: left; font-family: 'Helvetica', sans-serif;"> <!-- todo from Aimée : should I put myself as the contact to handle emails as in the past. ? -->
   If you have any questions regarding on-site participation in Fribourg, please contact Daniel, our local organiser, or the workshop series organisers Tilo, Paul and Otto.
   <br/>
 </div>
@@ -680,11 +744,10 @@ function showSlides(n) {
       <tr>
       <td>
         <a href="https://www.unifr.ch/bio/en/groups/wegmann/" target="_blank"><b>Daniel Wegmann</b></a><br/>
+        <a href="https://www.unifr.ch/bio/en/department/staff/phd-students/people/371593/db2f0" target="_blank"><b>Aimée Freiberg</b></a><br/>
       </td>
       <td style="text-align: right;">
-        <!-- TODO: once a University of Fribourg logo is added to images/, replace this link with:
-             <a href="https://www.unifr.ch/home/en/" alt="University of Fribourg" target="_blank"><img src="images/unifr.png" style="height:75px"></a> -->
-        <a href="https://www.unifr.ch/home/en/" alt="University of Fribourg" target="_blank"><b>University of Fribourg</b></a>
+        <a href="https://www.unifr.ch/home/en/" alt="University of Fribourg" target="_blank"><img src="images/uni-fribourg.svg" style="height:75px"></a>
       </td>
       </tr>
     </table>
@@ -702,9 +765,9 @@ function showSlides(n) {
     <a href="https://timm.haucke.xyz/" target="_blank"><b>Timm Haucke</b> (MIT CSAIL, Beerylab)</a><br/>
     <a href="https://research.google/people/danmorris/" target="_blank"><b>Dan Morris</b> (Google AI for Nature)</a><br/>
     </p>
+    <!-- todo: fix formatting -->
     <br/>
-    <!-- TODO: add a University of Fribourg cell to this grid once images/unifr.png exists, e.g.
-         <td><a href="https://www.unifr.ch/home/en/" target="_blank"><img src="images/unifr.png" style="width: 100%; max-width: 120px; height: auto; display: block; margin: 0 auto;"></a></td> -->
+    <td><a href="https://www.unifr.ch/home/en/" target="_blank"><img src="images/uni-fribourg.svg" style="width: 100%; max-width: 120px; height: auto; display: block; margin: 0 auto;"></a></td>
     <table id="affiliations" width="100%" border="0" cellspacing="0" style="table-layout: fixed; text-align: center; vertical-align: middle; height: 80px;">
       <tr>
         <td><a href="https://www.senckenberg.de/en/" target="_blank"><img src="images/senckenberg.png" style="width: 100%; max-width: 120px; height: auto; display: block; margin: 0 auto;"></a></td>
